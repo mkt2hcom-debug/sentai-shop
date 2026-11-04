@@ -6,4 +6,6 @@ RUN apt-get update \
        ffmpeg fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
 
-USER node
+# The SSH feature starts its daemon as root. The devcontainer's remoteUser
+# remains node, so editor terminals, setup commands and the shop run as node.
+USER root

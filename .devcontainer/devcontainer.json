@@ -2,6 +2,12 @@
   "name": "Sentai Shop — Codespaces demo",
   "build": { "dockerfile": "Dockerfile" },
   "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest",
+      "gatewayPorts": "no"
+    }
+  },
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
