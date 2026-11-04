@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0c19">
+  <meta name="description" content="Xem ảnh, video, tình trạng và phụ kiện của mô hình tại Sentai Galaxy.">
+  <title>Chi tiết sản phẩm · Sentai Galaxy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/galaxy.css">
+  <link rel="stylesheet" href="/product.css">
+  <script src="/analytics.js" defer></script>
+  <script src="/product.js" defer></script>
+</head>
+<body class="product-detail-page">
+  <a class="skip-link" href="#main">Đến chi tiết sản phẩm</a>
+  <div class="announcement"><span class="status-dot"></span> Bước vào vũ trụ Sentai Galaxy <span class="announcement-right">MỖI MÔ HÌNH, MỘT HUYỀN THOẠI</span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Sentai Galaxy — Trang chủ"><svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2 37 12v16L20 38 3 28V12L20 2Z" fill="currentColor"/><path d="m10 13 10 4 10-4-3 14-7 5-7-5-3-14Z" fill="#fff"/><path d="m11 18 8 3v5l-6-3-2-5Zm18 0-8 3v5l6-3 2-5Z" fill="currentColor"/></svg><span>SENTAI<span class="brand-shop">GALAXY<span class="brand-dot">.</span></span></span></a>
+    <nav class="main-nav" aria-label="Điều hướng chính"><a class="active" href="/#catalog">Sản phẩm</a><a href="/#collections">Bộ sưu tập</a><a href="/#how-to-order">Cách đặt hàng</a></nav>
+    <a id="detail-cart-link" class="cart-button" href="/?cart=1" aria-label="Mở giỏ hàng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span class="cart-label">Giỏ hàng</span><span class="cart-count" id="detail-cart-count">0</span></a>
+  </header>
+  <main class="product-page" id="main">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="/">Trang chủ</a><span aria-hidden="true">/</span><a href="/#catalog">Bộ sưu tập</a><span aria-hidden="true">/</span><span id="breadcrumb-name" aria-current="page">Chi tiết sản phẩm</span></nav>
+    <section id="product-state" class="product-state" role="status"><span class="spinner" aria-hidden="true"></span><p>Đang mở mảnh ghép của bạn…</p></section>
+    <article id="product-content" hidden>
+      <header class="model-heading"><a class="product-collection-link" id="product-series" href="/#collections"></a><h1 id="product-title"></h1></header>
+      <div class="product-overview">
+        <section class="product-gallery" id="product-gallery" aria-labelledby="photos-title">
+          <h2 id="photos-title" class="detail-sr-only">Ảnh sản phẩm</h2>
+          <div class="gallery-topline"><p id="gallery-owner" class="media-owner" aria-live="polite"></p><nav class="product-media-links" aria-label="Ảnh và video sản phẩm"><a id="photos-jump" href="#product-gallery">Ảnh</a><a id="videos-jump" href="#product-videos">Video ↓</a></nav></div>
+          <span id="media-count" class="detail-sr-only">0 ảnh</span><p id="photo-provenance" class="detail-sr-only"></p>
+          <div class="media-frame"><div class="media-stage" id="media-stage"></div><div class="gallery-navigation"><button id="media-prev" class="gallery-arrow" type="button" aria-label="Xem ảnh trước">←</button><span id="media-caption" aria-live="polite"></span><button id="media-next" class="gallery-arrow" type="button" aria-label="Xem ảnh tiếp theo">→</button></div></div>
+          <div id="media-thumbnails" class="media-thumbnails" role="group" aria-label="Chọn ảnh sản phẩm"></div>
+          <p class="detail-sr-only" id="gallery-help">Chạm ảnh để phóng to. Vuốt ngang để đổi ảnh.</p>
+        </section>
+        <section class="product-purchase" aria-labelledby="selected-unit-title">
+          <h2 id="selected-unit-title" class="detail-sr-only"></h2>
+          <section class="unit-selection" aria-labelledby="unit-selection-title"><div class="unit-selection-heading"><h3 id="unit-selection-title">Sản phẩm</h3><span id="model-summary"></span></div><div class="unit-collection-field"><label for="unit-collection">Bộ sưu tập / lô hàng</label><select id="unit-collection"></select></div><div id="unit-options" class="unit-options" role="group" aria-label="Chọn món hàng thực tế"></div></section>
+          <div class="price-block"><strong id="product-price"></strong><span id="product-availability" class="availability-pill"></span></div>
+          <div id="purchase-actions"></div>
+          <p id="purchase-message" class="purchase-message" role="status" hidden></p>
+          <section class="product-facts" aria-labelledby="facts-title"><h3 id="facts-title">Tình trạng</h3><p id="product-condition"></p><div id="product-description-block"><h3>Chi tiết &amp; phụ kiện</h3><p id="product-description"></p></div></section>
+          <details id="source-photos" class="source-photos" hidden><summary>Ảnh danh mục tham khảo</summary><div id="source-photo-grid" class="source-photo-grid"></div></details>
+          <details class="product-details"><summary>Thông tin thêm</summary><p id="selected-unit-collection" class="selected-unit-collection"></p><p id="product-sku" class="product-reference"></p><p>COD · Xác nhận tình trạng và phí vận chuyển trước khi giao.</p></details>
+          <div class="product-tools"><button id="share-product" class="text-button" type="button">Sao chép liên kết <span aria-hidden="true">↗</span></button><a id="manage-media-link" href="/admin">Quản lý ảnh &amp; video <span aria-hidden="true">↗</span></a></div>
+          <div id="share-fallback" hidden><label for="share-url">Liên kết sản phẩm — chọn và sao chép</label><input id="share-url" type="text" readonly></div>
+        </section>
+      </div>
+      <section class="product-videos" id="product-videos" aria-labelledby="videos-title">
+        <div class="video-section-heading"><h2 id="videos-title" tabindex="-1">Video sản phẩm</h2><span id="video-count">0 video</span></div>
+        <div class="product-video-grid" id="product-video-grid"></div>
+      </section>
+      <div class="continue-exploring"><a class="button outline" href="/#catalog">Xem sản phẩm khác <span aria-hidden="true">↗</span></a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><div><a class="brand footer-brand" href="/">SENTAI<span class="brand-dot">.</span></a><p>Một vũ trụ huyền bí. Vô vàn mảnh ghép đam mê.</p><div id="detail-shop-contact" class="shop-contact" hidden></div></div><div class="footer-links"><a href="/#catalog">Bộ sưu tập</a><a href="/#how-to-order">Hướng dẫn đặt hàng</a><a href="/admin">Quản trị cửa hàng ↗</a></div><div class="footer-bottom"><span>Sentai Galaxy · Dành cho người yêu mô hình</span><span>Explore. Collect. Become a legend.</span></div></footer>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-dialog-title"><div class="photo-dialog-top"><h2 id="photo-dialog-title">Ảnh sản phẩm</h2><button id="close-photo" class="icon-button" aria-label="Đóng ảnh phóng to" type="button">×</button></div><div id="zoom-photo"></div></dialog>
+  <aside id="mobile-purchase-bar" class="mobile-purchase-bar" aria-label="Đặt mua món đang chọn" hidden><div class="mobile-price"><span id="mobile-unit-label"></span><strong id="mobile-product-price"></strong></div><div id="mobile-purchase-action"></div></aside>
+  <div id="detail-toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript-message">Vui lòng bật JavaScript để xem ảnh, video và đặt mua sản phẩm.</p></noscript>
+</body>
+</html>

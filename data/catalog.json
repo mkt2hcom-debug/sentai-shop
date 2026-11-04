@@ -1,0 +1,3106 @@
+{
+  "metadata": {
+    "source_file": "SEntai.xlsx",
+    "source_sha256": "66449b6a941db73a2288d41e03b39bf2e963a114e58fbcd55b23afa506bb0369",
+    "schema_version": 1,
+    "currency": "VND",
+    "sheets": [
+      "mecha"
+    ],
+    "product_count": 144,
+    "series_count": 20,
+    "image_count": 122,
+    "image_association_count": 144,
+    "products_with_images": 144,
+    "priced_product_count": 26,
+    "availability_counts": {
+      "unknown": 143,
+      "sold_out": 1
+    },
+    "warnings": [
+      {
+        "type": "missing_prices",
+        "count": 118,
+        "rows": [
+          20,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145
+        ],
+        "message": "Giữ giá trống; cần liên hệ báo giá, không suy ra từ cột Thành tiền."
+      },
+      {
+        "type": "inventory_not_recorded",
+        "count": 143,
+        "message": "File không có số lượng tồn kho; cần xác nhận trước khi hoàn tất đơn hàng."
+      },
+      {
+        "type": "duplicate_skus",
+        "count": 9,
+        "duplicates": {
+          "MSK-MRO": [
+            17,
+            18
+          ],
+          "RST2-BRC": [
+            86,
+            108
+          ],
+          "RST2-DR1": [
+            101,
+            109
+          ],
+          "RST2-DR2": [
+            102,
+            110
+          ],
+          "RST2-ER": [
+            113,
+            121
+          ],
+          "RST2-PR1": [
+            92,
+            103
+          ],
+          "RST2-PR2": [
+            93,
+            104
+          ],
+          "TSG-DGGM": [
+            125,
+            126
+          ],
+          "USK2-DK": [
+            69,
+            72
+          ]
+        },
+        "message": "Giữ từng dòng sản phẩm riêng bằng ID theo dòng, không dùng SKU làm khóa duy nhất."
+      },
+      {
+        "type": "missing_skus",
+        "count": 22,
+        "rows": [
+          20,
+          21,
+          124,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145
+        ]
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "sentai-row-2",
+      "sku": "MSK-DKE1",
+      "name": "DX King Express 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 600000,
+      "price_original": "600000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "(Express + Jouki)",
+      "search_key": "King Express",
+      "source_total_original": "1200000.0",
+      "source_sheet": "mecha",
+      "source_row": 2,
+      "images": [
+        "/images/products/image3-5c2110bfcb2a.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-3",
+      "sku": "MSK-DKE2",
+      "name": "DX King Express 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 600000,
+      "price_original": "600000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "(Express + Jouki)",
+      "search_key": "King Express",
+      "source_total_original": "1200000.0",
+      "source_sheet": "mecha",
+      "source_row": 3,
+      "images": [
+        "/images/products/image3-5c2110bfcb2a.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-4",
+      "sku": "MSK-DGP1",
+      "name": "DX Grateful Phoenix 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 600000,
+      "price_original": "600000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Grateful Phoenix 01",
+      "search_key": "Grateful Phoenix",
+      "source_total_original": "1200000.0",
+      "source_sheet": "mecha",
+      "source_row": 4,
+      "images": [
+        "/images/products/image14-c91f8dcb92c5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-5",
+      "sku": "MSK-DGP2",
+      "name": "DX Grateful Phoenix 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 600000,
+      "price_original": "600000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Grateful Phoenix 02",
+      "search_key": "Grateful Phoenix",
+      "source_total_original": "1200000.0",
+      "source_sheet": "mecha",
+      "source_row": 5,
+      "images": [
+        "/images/products/image14-c91f8dcb92c5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-6",
+      "sku": "MSK-DGD",
+      "name": "DX Gigant Driller",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 450000,
+      "price_original": "450000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Gigant Driller",
+      "search_key": "Gigant Driller",
+      "source_total_original": "450000.0",
+      "source_sheet": "mecha",
+      "source_row": 6,
+      "images": [
+        "/images/products/image102-b19f55d4cc32.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-7",
+      "sku": "MSK-DM&DS",
+      "name": "DX Magellan & Duston Set",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 400000,
+      "price_original": "400000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Magellan & Duston Set",
+      "search_key": "Magellan & Duston Set",
+      "source_total_original": "800000.0",
+      "source_sheet": "mecha",
+      "source_row": 7,
+      "images": [
+        "/images/products/image117-95c1b7ac60fb.png"
+      ]
+    },
+    {
+      "id": "sentai-row-8",
+      "sku": "MSK-DMZ1",
+      "name": "DX Mashin Zabyun 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Mashin Zabyun 01",
+      "search_key": "Mashin Zabyun",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 8,
+      "images": [
+        "/images/products/image4-14411f138620.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-9",
+      "sku": "MSK-DMZ2",
+      "name": "DX Mashin Zabyun 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Mashin Zabyun 02",
+      "search_key": "Mashin Zabyun",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 9,
+      "images": [
+        "/images/products/image4-14411f138620.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-10",
+      "sku": "MSK-DMF1",
+      "name": "DX Mashin Fire 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Mashin Fire 01",
+      "search_key": "Mashin Fire",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 10,
+      "images": [
+        "/images/products/image34-9129b730b94e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-11",
+      "sku": "MSK-DMF2",
+      "name": "DX Mashin Fire 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Mashin Fire 02",
+      "search_key": "Mashin Fire",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 11,
+      "images": [
+        "/images/products/image34-9129b730b94e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-12",
+      "sku": "MSK-DMM",
+      "name": "DX Mashin Mach",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "DX Mashin Mach",
+      "search_key": "Mashin Mach",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 12,
+      "images": [
+        "/images/products/image12-48d4ec6245c0.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-13",
+      "sku": "MSK-MH1",
+      "name": "Mashin Helico 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Helico 01",
+      "search_key": "Mashin Helico",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 13,
+      "images": [
+        "/images/products/image23-3d2bc651debd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-14",
+      "sku": "MSK-MH2",
+      "name": "Mashin Helico 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Helico 02",
+      "search_key": "Mashin Helico",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 14,
+      "images": [
+        "/images/products/image23-3d2bc651debd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-15",
+      "sku": "MSK-ML1",
+      "name": "Mashin Lifton 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Lifton 01",
+      "search_key": "Mashin Lifton",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 15,
+      "images": [
+        "/images/products/image2-e91c80195686.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-16",
+      "sku": "MSK-ML2",
+      "name": "Mashin Lifton 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Lifton 02",
+      "search_key": "Mashin Lifton",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 16,
+      "images": [
+        "/images/products/image2-e91c80195686.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-17",
+      "sku": "MSK-MRO",
+      "name": "Mashin Rolland Orange",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Rolland Orange",
+      "search_key": "Mashin Rolland Orange",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 17,
+      "images": [
+        "/images/products/image25-4faf85eac241.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-18",
+      "sku": "MSK-MRO",
+      "name": "Mashin Rolland Orange",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Rolland Orange",
+      "search_key": "Mashin Rolland Orange",
+      "source_total_original": "400000.0",
+      "source_sheet": "mecha",
+      "source_row": 18,
+      "images": [
+        "/images/products/image25-4faf85eac241.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-19",
+      "sku": "MSK-MS",
+      "name": "Mashin Shovellow",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Shovellow",
+      "search_key": "Mashin Shovellow",
+      "source_total_original": "200000.0",
+      "source_sheet": "mecha",
+      "source_row": 19,
+      "images": [
+        "/images/products/image16-8a068db3c551.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-20",
+      "sku": null,
+      "name": "Mashin Jetter 01",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Jetter 01",
+      "search_key": "Mashin Jetter",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 20,
+      "images": [
+        "/images/products/image59-11c1eb3ebb5b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-21",
+      "sku": null,
+      "name": "Mashin Jetter 02",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Jetter 02",
+      "search_key": "Mashin Jetter",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 21,
+      "images": [
+        "/images/products/image59-11c1eb3ebb5b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-22",
+      "sku": "MSK-MC",
+      "name": "Mashin Carry",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Carry",
+      "search_key": "Mashin Carry",
+      "source_total_original": "200000.0",
+      "source_sheet": "mecha",
+      "source_row": 22,
+      "images": [
+        "/images/products/image15-8e2f3afd21c8.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-23",
+      "sku": "MSK-MRR",
+      "name": "Mashin Rolland Red",
+      "series": "Mashin Sentai Kiramager",
+      "category": "Mecha",
+      "price_vnd": 200000,
+      "price_original": "200000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd , Không bể gãy",
+      "description": "Mashin Rolland Red",
+      "search_key": "Mashin Rolland Red",
+      "source_total_original": "200000.0",
+      "source_sheet": "mecha",
+      "source_row": 23,
+      "images": [
+        "/images/products/image31-02309b3c3dc3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-24",
+      "sku": "R-DFK",
+      "name": "DX Five Knight",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 1250000,
+      "price_original": "1250000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "Tyramigo, Triken, Ankyloze, TigerLance, Milneed + 5 Key",
+      "search_key": "Five Knight",
+      "source_total_original": "1250000.0",
+      "source_sheet": "mecha",
+      "source_row": 24,
+      "images": [
+        "/images/products/image20-c1469c4945e9.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-25",
+      "sku": "R-DST",
+      "name": "DX Spino Thunder",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 750000,
+      "price_original": "750000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "MosaRex (Khủng long biển) + DimeVolcano (Lưng gai) + 2 Key",
+      "search_key": "Spino Thunder",
+      "source_total_original": "750000.0",
+      "source_sheet": "mecha",
+      "source_row": 25,
+      "images": [
+        "/images/products/image6-e52657e16a1b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-26",
+      "sku": "R-DCR",
+      "name": "DX Cosmo Raptor",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 660000,
+      "price_original": "660000.0",
+      "availability": "sold_out",
+      "stock_quantity": null,
+      "condition": "Đủ 3 Key",
+      "description": "Shine Raptor (Trắng) + Shadow Raptor (Đen) + 3 Key",
+      "search_key": "Cosmo Raptor",
+      "source_total_original": "Đã bán 660.000",
+      "source_sheet": "mecha",
+      "source_row": 26,
+      "images": [
+        "/images/products/image5-b1dbb2ee46da.png"
+      ]
+    },
+    {
+      "id": "sentai-row-27",
+      "sku": "R-DY",
+      "name": "DX YokuRyuOh",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 860000,
+      "price_original": "860000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "Pterardon (Dực long băng) + 1 Key Băng",
+      "search_key": "YokuRyuOh",
+      "source_total_original": "860000.0",
+      "source_sheet": "mecha",
+      "source_row": 27,
+      "images": [
+        "/images/products/image18-2bdb1494a7e5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-28",
+      "sku": "R-DK",
+      "name": "DX Kishiryuzin",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 830000,
+      "price_original": "830000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "Dinomigo (Xanh Movie) + 2 Cobrago (Rắn) + 1 Key Movie",
+      "search_key": "Kishiryuzin",
+      "source_total_original": "830000.0",
+      "source_sheet": "mecha",
+      "source_row": 28,
+      "images": [
+        "/images/products/image11-e1bbdfc4d758.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-29",
+      "sku": "R-DP",
+      "name": "DX Pachygaroo",
+      "series": "Ryusoulger",
+      "category": "Mecha",
+      "price_vnd": 420000,
+      "price_original": "420000.0",
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "Pachygaroo (Mẹ) + Chibigaroo (Con) + 1 Key",
+      "search_key": "Pachygaroo",
+      "source_total_original": "420000.0",
+      "source_sheet": "mecha",
+      "source_row": 29,
+      "images": [
+        "/images/products/image50-020d1c741087.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-30",
+      "sku": "SSS-DM",
+      "name": "DX Mougyudaioh",
+      "series": "Samurai Sentai Shinkenger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "",
+      "search_key": "Mougyudaioh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 30,
+      "images": [
+        "/images/products/image41-94ace5d429f4.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-31",
+      "sku": "SSS-DKO",
+      "name": "DX Kajiki Origami",
+      "series": "Samurai Sentai Shinkenger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "",
+      "search_key": "Kajiki Origami",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 31,
+      "images": [
+        "/images/products/image36-b6c25bb3a446.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-32",
+      "sku": "SSS-DIO",
+      "name": "DX Ika Origami",
+      "series": "Samurai Sentai Shinkenger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Ika Origami",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 32,
+      "images": [
+        "/images/products/image26-0f7664263204.png"
+      ]
+    },
+    {
+      "id": "sentai-row-33",
+      "sku": "KSG-GMS3DG",
+      "name": "Gokai Machine Series 03 DX Gaolion",
+      "series": "Kaizoku Sentai Gokaiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gokai Machine Series 03 DX Gaolion",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 33,
+      "images": [
+        "/images/products/image1-6ba5831dc311.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-34",
+      "sku": "KSG-GMS4F",
+      "name": "Gokai Machine Series 04 Furaimaru",
+      "series": "Kaizoku Sentai Gokaiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gokai Machine Series 04 Furaimaru",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 34,
+      "images": [
+        "/images/products/image8-698dd16d472c.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-35",
+      "sku": "KSG-GPSM2",
+      "name": "Gokaiger Pat Striker Machine 02",
+      "series": "Kaizoku Sentai Gokaiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gokaiger Pat Striker Machine",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 35,
+      "images": [
+        "/images/products/image28-9a469b97a147.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-36",
+      "sku": "KSLVKSP-VVSXCDXES",
+      "name": "VS Vehicle Series X Combine DX X Emperor Set",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "VS Vehicle Series X Combine DX X Emperor Set",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 36,
+      "images": [
+        "/images/products/image57-136ab1556426.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-37",
+      "sku": "KSLVKSP-DYDF",
+      "name": "DX Yellow Dial Fighter",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Yellow Dial Fighter",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 37,
+      "images": [
+        "/images/products/image43-64d7db5170d2.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-38",
+      "sku": "KSLVKSP-DRDF",
+      "name": "DX Red Dial Fighter",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Red Dial Fighter",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 38,
+      "images": [
+        "/images/products/image7-c7832b00b009.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-39",
+      "sku": "KSLVKSP-DBDF",
+      "name": "DX Blue Dial Fighte",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Blue Dial Fighte",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 39,
+      "images": [
+        "/images/products/image22-6d1031867ca4.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-40",
+      "sku": "KSLVKSP-DTM1",
+      "name": "DX Trigger Machine 1gou",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Trigger Machine 1gou",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 40,
+      "images": [
+        "/images/products/image19-c5f1cf1e6820.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-41",
+      "sku": "JSG-DGS",
+      "name": "DX Geki Shark",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "Full phụ kiện",
+      "description": "",
+      "search_key": "Geki Shark",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 41,
+      "images": [
+        "/images/products/image29-75c1016af172.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-42",
+      "sku": "JSG-DGW",
+      "name": "DX Geki Wolf.",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Geki Wolf.",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 42,
+      "images": [
+        "/images/products/image39-381726bfbfa6.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-43",
+      "sku": "JSG-DRL&RCS",
+      "name": "DX Rin Lion & Rin Chameleon Set",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Rin Lion & Rin Chameleon Set",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 43,
+      "images": [
+        "/images/products/image10-7a1ebba2510c.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-44",
+      "sku": "JSG-DGE",
+      "name": "DX Geki Elephant",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Geki Elephant",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 44,
+      "images": [
+        "/images/products/image13-62d25c6d6576.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-45",
+      "sku": "JSG-DS",
+      "name": "DX SaiDaiOh",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "SaiDaiOh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 45,
+      "images": [
+        "/images/products/image33-499c3d179a74.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-46",
+      "sku": "JSG-DJGGF",
+      "name": "DX Juuken Gattai Geki Fire",
+      "series": "Juken Sentai Gekiranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Juuken Gattai Geki Fire",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 46,
+      "images": [
+        "/images/products/image49-9ad9985977bd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-47",
+      "sku": "MST-DTS",
+      "name": "DX Time Shadow",
+      "series": "Mirai Sentai Timeranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Time Shadow",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 47,
+      "images": [
+        "/images/products/image24-0388afa7dc15.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-48",
+      "sku": "TSG-DGG",
+      "name": "DX Gosei Ground",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Gosei Ground",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 48,
+      "images": [
+        "/images/products/image66-e6be8fe26ca7.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-49",
+      "sku": "TSG-MBS",
+      "name": "Mystic Brother Set",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Mystic Brother Set",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 49,
+      "images": [
+        "/images/products/image42-638969d777f5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-50",
+      "sku": "TSG-DGU",
+      "name": "DX Gosei Ultimate",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gosei Ultimate",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 50,
+      "images": [
+        "/images/products/image21-f303665da027.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-51",
+      "sku": "G-DSB",
+      "name": "DX Soul Bird",
+      "series": "Gao",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Soul Bird",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 51,
+      "images": [
+        "/images/products/image73-857090689de1.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-52",
+      "sku": "G-DGHBMFB",
+      "name": "DX Gao Hunter Blue Moon Full Box",
+      "series": "Gao",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Gao Hunter Blue Moon Full Box",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 52,
+      "images": [
+        "/images/products/image30-9b2fb1ad3505.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-53",
+      "sku": "G-DGHBMN",
+      "name": "DX Gao Hunter Blue Moon Nobox",
+      "series": "Gao",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Gao Hunter Blue Moon Nobox",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 53,
+      "images": [
+        "/images/products/image9-ac373ead5a84.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-54",
+      "sku": "KSG-DLB",
+      "name": "DX Liner Boy",
+      "series": "Kyuukyuu Sentai GoGoFive",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Liner Boy",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 54,
+      "images": [
+        "/images/products/image71-d06bc2bf6683.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-55",
+      "sku": "KSG-DGL",
+      "name": "DX Grand Liner",
+      "series": "Kyuukyuu Sentai GoGoFive",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Grand Liner",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 55,
+      "images": [
+        "/images/products/image48-a19a7e0ba293.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-56",
+      "sku": "ESG-DHBS",
+      "name": "DX Highway Buster Set",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Highway Buster Set",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 56,
+      "images": [
+        "/images/products/image32-b43a71969deb.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-57",
+      "sku": "ESG-DAWGG",
+      "name": "DX Armored Wheel Go-Roader GT",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Armored Wheel Go-Roader GT",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 57,
+      "images": [
+        "/images/products/image27-05717292d4a1.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-58",
+      "sku": "ESG-DEGK",
+      "name": "DX Engine Gattai Kyoretsu-Oh",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Gattai Kyoretsu-Oh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 58,
+      "images": [
+        "/images/products/image81-3774e07a1cb8.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-59",
+      "sku": "ESG-DEGE",
+      "name": "DX Engine Gattai Engine-O",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Gattai Engine-O",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 59,
+      "images": [
+        "/images/products/image17-a8a434a6dc35.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-60",
+      "sku": "ESG-DEC",
+      "name": "DX Engine Carrigator",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Carrigator",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 60,
+      "images": [
+        "/images/products/image47-7eef55f66747.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-61",
+      "sku": "ESG-JR",
+      "name": "Junction Rifle",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Junction Rifle",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 61,
+      "images": [
+        "/images/products/image75-93338b89340b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-62",
+      "sku": "ESG-DEG",
+      "name": "DX Engine Gunpherd",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Gunpherd",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 62,
+      "images": [
+        "/images/products/image91-fb38de19214e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-63",
+      "sku": "ESG-DEB",
+      "name": "DX Engine Birca",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Birca",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 63,
+      "images": [
+        "/images/products/image60-886f2c197a91.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-64",
+      "sku": "ESG-DED",
+      "name": "DX Engine Dai-Shogun",
+      "series": "Engine Sentai Go-Onger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Engine Dai-Shogun",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 64,
+      "images": [
+        "/images/products/image44-14b31403d8b8.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-65",
+      "sku": "SSN-DBK",
+      "name": "DX Bison King",
+      "series": "Shuriken Sentai Ninninger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Bison King",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 65,
+      "images": [
+        "/images/products/image89-3527c5edd8a3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-66",
+      "sku": "TSG-DFF",
+      "name": "DX FS-0O Frog",
+      "series": "Tokumei Sentai Go-Busters",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "FS-0O Frog",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 66,
+      "images": [
+        "/images/products/image92-b671b99653da.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-67",
+      "sku": "USK2-DGH",
+      "name": "DX Gigant Houou",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gigant Houou",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 67,
+      "images": [
+        "/images/products/image53-3508d6aca56e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-68",
+      "sku": "USK2-DRV",
+      "name": "DX Ryu Voyager",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Ryu Voyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 68,
+      "images": [
+        "/images/products/image40-a37800c1dfde.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-69",
+      "sku": "USK2-DK",
+      "name": "DX Kyurenoh",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "(Kyutama Gattai 01, 03, 05, 07, 09)",
+      "search_key": "Kyurenoh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 69,
+      "images": [
+        "/images/products/image37-002211bc90ae.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-70",
+      "sku": "USK2-DHV",
+      "name": "DX Hebitsukai Voyager",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Hebitsukai Voyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 70,
+      "images": [
+        "/images/products/image55-76e65b9c85cc.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-71",
+      "sku": "USK2-DTV",
+      "name": "DX Tenbin Voyager",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Tenbin Voyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 71,
+      "images": [
+        "/images/products/image65-0815ecd27d5e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-72",
+      "sku": "USK2-DK",
+      "name": "DX Kyurenoh",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Kyurenoh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 72,
+      "images": [
+        "/images/products/image51-03c2a35fa137.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-73",
+      "sku": "USK2-DKV",
+      "name": "DX Kojishi Voyager",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Kojishi Voyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 73,
+      "images": [
+        "/images/products/image38-ee567ce66aa8.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-74",
+      "sku": "USK2-DKV&OV",
+      "name": "DX Koguma Voyager & Ooguma Voyager",
+      "series": "Uchuu Sentai Kyuranger 2017",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Koguma Voyager & Ooguma Voyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 74,
+      "images": [
+        "/images/products/image52-57290204932f.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-75",
+      "sku": "KSP2-DLM",
+      "name": "DX Lupin Magnum",
+      "series": "Keisatsu Sentai Patoranger 2018",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Lupin Magnum",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 75,
+      "images": [
+        "/images/products/image54-83fbf6a3b0d5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-76",
+      "sku": "RST2-HR1",
+      "name": "Hyper Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "một tàu nhỏ (ToQRessha) có hình dáng khí động học và một đầu máy hơi nước khổng lồ màu vàng/đồng.",
+      "search_key": "Hyper Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 76,
+      "images": [
+        "/images/products/image56-149fb93c6477.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-77",
+      "sku": "RST2-HR2",
+      "name": "Hyper Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "có gãy chốt dán keo",
+      "description": "một tàu nhỏ (ToQRessha) có hình dáng khí động học và một đầu máy hơi nước khổng lồ màu vàng/đồng.",
+      "search_key": "Hyper Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 77,
+      "images": [
+        "/images/products/image58-93f4d4b4563b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-78",
+      "sku": "RST2-RR1",
+      "name": "Red Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - có gãy chốt dán keo. nhưng vẫn hd tốt ghép gaitai bình thường",
+      "description": "",
+      "search_key": "Red Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 78,
+      "images": [
+        "/images/products/image46-577507d86707.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-79",
+      "sku": "RST2-RR2",
+      "name": "Red Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Red Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 79,
+      "images": [
+        "/images/products/image46-577507d86707.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-80",
+      "sku": "RST2-RRCĐ",
+      "name": "Red Ressha Chỉ Đầu",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - đẹp",
+      "description": "",
+      "search_key": "Red Ressha Chỉ Đầu",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 80,
+      "images": [
+        "/images/products/image45-3a1465190b93.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-81",
+      "sku": "RST2-FR1",
+      "name": "Fire Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Fire Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 81,
+      "images": [
+        "/images/products/image62-0af41c84ead1.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-82",
+      "sku": "RST2-FR2",
+      "name": "Fire Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Fire Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 82,
+      "images": [
+        "/images/products/image62-0af41c84ead1.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-83",
+      "sku": "RST2-FRC",
+      "name": "Fire Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Fire Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 83,
+      "images": [
+        "/images/products/image77-51d4dcc2ad45.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-84",
+      "sku": "RST2-BR1",
+      "name": "Blue Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Blue Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 84,
+      "images": [
+        "/images/products/image70-a0411a2a5dec.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-85",
+      "sku": "RST2-BR2",
+      "name": "Blue Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Blue Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 85,
+      "images": [
+        "/images/products/image70-a0411a2a5dec.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-86",
+      "sku": "RST2-BRC",
+      "name": "Blue Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Blue Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 86,
+      "images": [
+        "/images/products/image61-5ec591eedf9c.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-87",
+      "sku": "RST2-YR1",
+      "name": "Yellow Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co suoc nhe",
+      "description": "",
+      "search_key": "Yellow Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 87,
+      "images": [
+        "/images/products/image35-a9e2df6df4e3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-88",
+      "sku": "RST2-YR2",
+      "name": "Yellow Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Yellow Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 88,
+      "images": [
+        "/images/products/image35-a9e2df6df4e3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-89",
+      "sku": "RST2-GR1",
+      "name": "Green Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Green Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 89,
+      "images": [
+        "/images/products/image80-9cab1f8c82c5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-90",
+      "sku": "RST2-GR2",
+      "name": "Green Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Green Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 90,
+      "images": [
+        "/images/products/image80-9cab1f8c82c5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-91",
+      "sku": "RST2-GRC",
+      "name": "Green Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Green Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 91,
+      "images": [
+        "/images/products/image64-cdb6dd5c9177.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-92",
+      "sku": "RST2-PR1",
+      "name": "Pink Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Pink Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 92,
+      "images": [
+        "/images/products/image72-b46efc7221dc.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-93",
+      "sku": "RST2-PR2",
+      "name": "Pink Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Pink Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 93,
+      "images": [
+        "/images/products/image72-b46efc7221dc.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-94",
+      "sku": "RST2-SR1",
+      "name": "Shield Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Shield Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 94,
+      "images": [
+        "/images/products/image68-513ee79546cd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-95",
+      "sku": "RST2-SRC",
+      "name": "Shield Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Shield Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 95,
+      "images": [
+        "/images/products/image68-513ee79546cd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-96",
+      "sku": "RST2-CCR1",
+      "name": "Car Carrier Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Car Carrier Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 96,
+      "images": [
+        "/images/products/image67-29eb91f68cd3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-97",
+      "sku": "RST2-CCR2",
+      "name": "Car Carrier Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Car Carrier Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 97,
+      "images": [
+        "/images/products/image67-29eb91f68cd3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-98",
+      "sku": "RST2-CCRC",
+      "name": "Car Carrier Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Car Carrier Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 98,
+      "images": [
+        "/images/products/image69-05a523dcb355.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-99",
+      "sku": "RST2-TR1",
+      "name": "Tank Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Tank Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 99,
+      "images": [
+        "/images/products/image87-03b28c2938c0.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-100",
+      "sku": "RST2-TR2",
+      "name": "Tank Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Tank Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 100,
+      "images": [
+        "/images/products/image87-03b28c2938c0.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-101",
+      "sku": "RST2-DR1",
+      "name": "Diesel Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Diesel Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 101,
+      "images": [
+        "/images/products/image84-d37f39d8113e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-102",
+      "sku": "RST2-DR2",
+      "name": "Diesel Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Diesel Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 102,
+      "images": [
+        "/images/products/image84-d37f39d8113e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-103",
+      "sku": "RST2-PR1",
+      "name": "Police Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Police Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 103,
+      "images": [
+        "/images/products/image63-e6d54cefca76.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-104",
+      "sku": "RST2-PR2",
+      "name": "Police Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Police Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 104,
+      "images": [
+        "/images/products/image63-e6d54cefca76.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-105",
+      "sku": "RST2-PRC",
+      "name": "Police Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Police Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 105,
+      "images": [
+        "/images/products/image79-03ca95becfa7.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-106",
+      "sku": "RST2-DBD1",
+      "name": "DX Build Daioh 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Build Daioh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 106,
+      "images": [
+        "/images/products/image76-d4520f87d710.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-107",
+      "sku": "RST2-DBD2",
+      "name": "DX Build Daioh 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Build Daioh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 107,
+      "images": [
+        "/images/products/image76-d4520f87d710.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-108",
+      "sku": "RST2-BRC",
+      "name": "Build Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Build Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 108,
+      "images": [
+        "/images/products/image93-8a061660b40e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-109",
+      "sku": "RST2-DR1",
+      "name": "Drill Ressha 01",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Drill Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 109,
+      "images": [
+        "/images/products/image85-43fa386127f5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-110",
+      "sku": "RST2-DR2",
+      "name": "Drill Ressha 02",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Drill Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 110,
+      "images": [
+        "/images/products/image85-43fa386127f5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-111",
+      "sku": "RST2-DRC",
+      "name": "Drill Ressha China",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Drill Ressha China",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 111,
+      "images": [
+        "/images/products/image85-43fa386127f5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-112",
+      "sku": "RST2-LR",
+      "name": "Lion Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Lion Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 112,
+      "images": [
+        "/images/products/image78-67b351cd8878.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-113",
+      "sku": "RST2-ER",
+      "name": "Eagle Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Eagle Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 113,
+      "images": [
+        "/images/products/image109-e550d0dc5046.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-114",
+      "sku": "RST2-WR",
+      "name": "Wildcat Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Wildcat Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 114,
+      "images": [
+        "/images/products/image96-5547c0f8fa8e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-115",
+      "sku": "RST2-AR",
+      "name": "Alligator Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "Alligator Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 115,
+      "images": [
+        "/images/products/image74-0389cf575273.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-116",
+      "sku": "RST2-PR",
+      "name": "Panda Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Panda Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 116,
+      "images": [
+        "/images/products/image99-4ab62de9a953.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-117",
+      "sku": "RST2-EKR",
+      "name": "EX Kyoryuger Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn - co tray suoc",
+      "description": "",
+      "search_key": "EX Kyoryuger Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 117,
+      "images": [
+        "/images/products/image116-f319262d3737.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-118",
+      "sku": "RST2-SR",
+      "name": "Shinkenger Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Shinkenger Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 118,
+      "images": [
+        "/images/products/image86-a6a855bee054.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-119",
+      "sku": "RST2-GBR",
+      "name": "Go Busters Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Go Busters Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 119,
+      "images": [
+        "/images/products/image106-3fdf9e219ab9.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-120",
+      "sku": "RST2-S",
+      "name": "ScopeRessha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "ScopeRessha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 120,
+      "images": [
+        "/images/products/image90-ffe87a2cdfbd.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-121",
+      "sku": "RST2-ER",
+      "name": "Energy Ressha",
+      "series": "Ressha Sentai ToQger 2014",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Energy Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 121,
+      "images": [
+        "/images/products/image100-5707345f634b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-122",
+      "sku": "RST2-CR",
+      "name": "Claw Ressha",
+      "series": "Ressha Sentai ToQger 2015",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Claw Ressha",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 122,
+      "images": [
+        "/images/products/image88-68259e29b886.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-123",
+      "sku": "GSB-DDZ",
+      "name": "DX Daikenjin Zubaan",
+      "series": "GoGo Sentai Boukenger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Daikenjin Zubaan",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 123,
+      "images": [
+        "/images/products/image111-22813276ec5a.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-124",
+      "sku": null,
+      "name": "DX DaiVoyager",
+      "series": "GoGo Sentai Boukenger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "DaiVoyager",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 124,
+      "images": [
+        "/images/products/image83-51c7309223b1.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-125",
+      "sku": "TSG-DGGM",
+      "name": "DX Gosei Great Megazord",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Gosei Great Megazord",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 125,
+      "images": [
+        "/images/products/image119-778d781d5d33.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-126",
+      "sku": "TSG-DGGM",
+      "name": "DX Gosei Great Megazord",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Gosei Great Megazord",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 126,
+      "images": [
+        "/images/products/image98-22e1ef4bc517.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-127",
+      "sku": null,
+      "name": "DX SJ-05 Stag Beetle",
+      "series": "Tokumei Sentai Go-Busters",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "SJ-05 Stag Beetle",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 127,
+      "images": [
+        "/images/products/image82-bad258cb3cbf.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-128",
+      "sku": null,
+      "name": "DX Go Buster Beet.",
+      "series": "Tokumei Sentai Go-Busters",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Go Buster Beet.",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 128,
+      "images": [
+        "/images/products/image107-204850d8bb1e.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-129",
+      "sku": null,
+      "name": "Machine RH-03 Rabbit",
+      "series": "Tokumei Sentai Go-Busters",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Machine RH-03 Rabbit",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 129,
+      "images": [
+        "/images/products/image108-ed345bbd3a9a.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-130",
+      "sku": null,
+      "name": "Machine CB-01 DX Go-Buster Ac",
+      "series": "Tokumei Sentai Go-Busters",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Machine CB-01 DX Go-Buster Ac",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 130,
+      "images": [
+        "/images/products/image113-c18f672c00e8.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-131",
+      "sku": null,
+      "name": "DX Gosei Ground",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Gosei Ground",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 131,
+      "images": [
+        "/images/products/image97-d6939f3adc82.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-132",
+      "sku": null,
+      "name": "DX Trigger Machine Biker",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Trigger Machine Biker",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 132,
+      "images": [
+        "/images/products/image104-0c5fabd1ddf6.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-133",
+      "sku": null,
+      "name": "DX Trigger Machine Crane & Trigger Machine Drill",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Trigger Machine Crane & Trigger Machine Drill",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 133,
+      "images": [
+        "/images/products/image105-f018d2620cbb.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-134",
+      "sku": null,
+      "name": "DX X Train Thunder",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "X Train Thunder",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 134,
+      "images": [
+        "/images/products/image94-9f6776f75ab0.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-135",
+      "sku": null,
+      "name": "DX Trigger Machine PatStriker",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Trigger Machine PatStriker",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 135,
+      "images": [
+        "/images/products/image95-232c5489668a.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-136",
+      "sku": null,
+      "name": "DX Siren Striker",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Siren Striker",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 136,
+      "images": [
+        "/images/products/image101-9a0ced95eca3.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-137",
+      "sku": null,
+      "name": "DX X Train Fire",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "X Train Fire",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 137,
+      "images": [
+        "/images/products/image114-e8ec8c2f719c.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-138",
+      "sku": null,
+      "name": "DX Trigger Machine No.3",
+      "series": "Kaitou Sentai Lupinranger VS Keisatsu Sentai Patranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Trigger Machine No.",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 138,
+      "images": [
+        "/images/products/image121-31f716ac992b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-139",
+      "sku": null,
+      "name": "DX Gosei Ground",
+      "series": "Tensou Sentai Goseiger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "2nd đủ đồ - nguyên vẹn",
+      "description": "",
+      "search_key": "Gosei Ground",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 139,
+      "images": [
+        "/images/products/image115-9545cf61000b.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-140",
+      "sku": null,
+      "name": "Dx Giga Rhinos",
+      "series": "Seijuu Sentai Gingaman",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Dx Giga Rhinos",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 140,
+      "images": [
+        "/images/products/image103-f97f28b03f59.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-141",
+      "sku": null,
+      "name": "Dx Victory Mars",
+      "series": "Kyukyu Sentai GoGoFive",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "DX Victory Mars (GD-17)\nĐây là robot thứ hai, được thiết kế để chiến đấu trong không gian và những môi trường khắc nghiệt mà Victory Robo không thể chịu nhiệt được.\nHợp thể từ: 5 phương tiện Mars Machines (đều là các phi thuyền không gian/tàu thăm dò) [30].\nChất liệu: Cũng thuộc dòng Chogokin, có độ chi tiết cao và màu sắc chủ đạo là đỏ sậm và vàng.\nDạng đặc biệt: Có thể biến thành dạng xe bò khổng lồ gọi là Beetle Mars [30].\nVũ khí: Một cây trượng lớn gọi là Jet Lance, có thể bắn đạn hoặc dùng để đâm xuyên kẻ địch.",
+      "search_key": "Dx Victory Mars",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 141,
+      "images": [
+        "/images/products/image122-d5cb15f1f9af.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-142",
+      "sku": null,
+      "name": "DX Victory Robo",
+      "series": "Kyukyu Sentai GoGoFive",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "1. DX Victory Robo (GD-15)\nĐây là robot đầu tiên và là biểu tượng của bộ phim, tập trung vào các phương tiện cứu hộ đô thị.\nHợp thể từ: 5 phương tiện 99 Machines (Xe thang, xe vòi rồng, máy bay, xe bọc thép và xe cứu thương) [1, 16].\nChất liệu: Thuộc dòng Chogokin (Siêu hợp kim) với nhiều chi tiết kim loại nặng và bền [1, 19].\nDạng đặc biệt: Có thể biến thành Victory Walker (dạng robot 2 chân nhưng chưa hoàn thiện phần thân trên) để di chuyển nhanh hoặc dập lửa [1, 12].\nVũ khí: Thanh kiếm Brave Sword [19, 25].",
+      "search_key": "Victory Robo",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 142,
+      "images": [
+        "/images/products/image120-221f2b0c53c5.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-143",
+      "sku": null,
+      "name": "DX Chogokin Giga Phoenix Megazord.",
+      "series": "Seijuu Sentai Gingaman",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Chogokin Giga Phoenix Megazord.",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 143,
+      "images": [
+        "/images/products/image112-d7096244bd0f.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-144",
+      "sku": null,
+      "name": "DX Time Robo",
+      "series": "Mirai Sentai Timeranger",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "Time Robo",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 144,
+      "images": [
+        "/images/products/image118-7a4584ee6c99.jpg"
+      ]
+    },
+    {
+      "id": "sentai-row-145",
+      "sku": null,
+      "name": "DX GingaiOh",
+      "series": "Seijuu Sentai Gingaman",
+      "category": "Mecha",
+      "price_vnd": null,
+      "price_original": null,
+      "availability": "unknown",
+      "stock_quantity": null,
+      "condition": "",
+      "description": "",
+      "search_key": "GingaiOh",
+      "source_total_original": null,
+      "source_sheet": "mecha",
+      "source_row": 145,
+      "images": [
+        "/images/products/image110-f8957989d003.jpg"
+      ]
+    }
+  ]
+}

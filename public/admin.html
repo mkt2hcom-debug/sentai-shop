@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Quản trị cửa hàng · Sentai Galaxy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin-session.js" defer></script>
+  <script src="/admin.js" defer></script>
+</head>
+<body class="admin-page">
+  <a class="skip-link" href="#main">Đến nội dung</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Sentai Shop — về cửa hàng"><span class="brand-mark" aria-hidden="true">S</span><span>SENTAI<span class="brand-small">GALAXY / QUẢN TRỊ</span></span></a>
+    <div class="header-actions"><a class="text-link" href="/">Xem cửa hàng <span aria-hidden="true">↗</span></a><button id="logout" class="button button-outline" hidden>Đăng xuất</button></div>
+  </header>
+  <main id="main">
+    <p id="boot-status" class="boot-status" role="status">Đang kiểm tra phiên đăng nhập…</p>
+    <section id="login-section" class="login-wrap" hidden aria-labelledby="login-title">
+      <div class="login-intro"><span class="eyebrow">SENTAI GALAXY / TRẠM ĐIỀU KHIỂN</span><h1>Quản trị<br> Sentai Galaxy.</h1><p>Quản lý sản phẩm và theo dõi đơn hàng của cửa hàng tại một nơi.</p><span class="intro-decoration" aria-hidden="true">✦</span></div>
+      <div class="login-card"><span class="eyebrow">DÀNH CHO CHỦ CỬA HÀNG</span><h2 id="login-title">Đăng nhập quản trị</h2><p class="muted" id="login-description">Tài khoản dành cho chủ cửa hàng.</p>
+        <p id="disabled-message" class="notice" hidden>Chưa cấu hình tài khoản quản trị. Xem README để thiết lập ADMIN_PASSWORD trên máy chủ.</p>
+        <form id="login-form">
+          <label for="username">Tài khoản</label><input id="username" name="username" type="text" value="admin" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="40">
+          <label for="password">Mật khẩu</label><div class="auth-password"><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="1024"><button class="password-toggle" type="button" data-toggle-password="password" aria-label="Hiện mật khẩu" aria-pressed="false">Hiện</button></div>
+          <button class="button button-primary full-width" type="submit">Đăng nhập <span aria-hidden="true">→</span></button>
+        </form>
+        <form id="setup-form" hidden>
+          <label for="setup-username">Tài khoản</label><input id="setup-username" name="username" type="text" value="admin" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="40" pattern="[A-Za-z][A-Za-z0-9._\-]{2,39}" title="3–40 ký tự, bắt đầu bằng chữ; dùng chữ, số, dấu chấm, gạch dưới hoặc gạch ngang.">
+          <label for="setup-password">Mật khẩu mới</label><div class="auth-password"><input id="setup-password" name="password" type="password" autocomplete="new-password" required minlength="15" maxlength="128" placeholder="Từ 15 ký tự"><button class="password-toggle" type="button" data-toggle-password="setup-password" aria-label="Hiện mật khẩu mới" aria-pressed="false">Hiện</button></div>
+          <label for="setup-password-confirm">Nhập lại mật khẩu</label><div class="auth-password"><input id="setup-password-confirm" name="password_confirm" type="password" autocomplete="new-password" required minlength="15" maxlength="128"><button class="password-toggle" type="button" data-toggle-password="setup-password-confirm" aria-label="Hiện mật khẩu nhập lại" aria-pressed="false">Hiện</button></div>
+          <button class="button button-primary full-width" type="submit">Tạo tài khoản <span aria-hidden="true">→</span></button>
+        </form>
+        <form id="reset-form" hidden>
+          <label for="reset-username">Tài khoản</label><input id="reset-username" name="username" type="text" value="admin" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="40" pattern="[A-Za-z][A-Za-z0-9._\-]{2,39}" title="3–40 ký tự, bắt đầu bằng chữ; dùng chữ, số, dấu chấm, gạch dưới hoặc gạch ngang.">
+          <label for="reset-password">Mật khẩu mới</label><div class="auth-password"><input id="reset-password" name="password" type="password" autocomplete="new-password" required minlength="15" maxlength="128" placeholder="Từ 15 ký tự"><button class="password-toggle" type="button" data-toggle-password="reset-password" aria-label="Hiện mật khẩu mới" aria-pressed="false">Hiện</button></div>
+          <label for="reset-password-confirm">Nhập lại mật khẩu</label><div class="auth-password"><input id="reset-password-confirm" name="password_confirm" type="password" autocomplete="new-password" required minlength="15" maxlength="128"><button class="password-toggle" type="button" data-toggle-password="reset-password-confirm" aria-label="Hiện mật khẩu nhập lại" aria-pressed="false">Hiện</button></div>
+          <button class="button button-primary full-width" type="submit">Lưu mật khẩu &amp; đăng nhập <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="login-error" class="form-error" role="alert"></p>
+        <button id="back-to-login" class="auth-back" type="button" hidden>← Quay lại đăng nhập</button>
+        <details id="forgot-password" class="forgot-password"><summary>Quên mật khẩu?</summary><p>Trên máy đang chạy web, mở <strong>RESET-ADMIN.cmd</strong> rồi dùng liên kết hiện ra để đặt mật khẩu mới.</p><p>Hoặc chạy <code>npm run admin:reset</code> trong thư mục web. Liên kết dùng một lần, có hiệu lực 20 phút.</p></details>
+      </div>
+    </section>
+    <section id="dashboard" class="dashboard" hidden aria-labelledby="dashboard-title">
+      <div class="page-heading"><div><span class="eyebrow">KHÔNG GIAN QUẢN TRỊ</span><h1 id="dashboard-title">Tổng quan cửa hàng<span class="red-dot">.</span></h1><p class="muted">Cập nhật sản phẩm. Theo dõi từng đơn đặt mua.</p></div><div class="dashboard-heading-actions"><a class="button button-primary" href="/admin/analytics">Thống kê truy cập ↗</a> <a class="button button-outline" href="/admin/prices">Giá từ hội nhóm ↗</a> <button id="refresh" class="button button-outline"><span aria-hidden="true">↻</span> Làm mới dữ liệu</button></div></div>
+      <div class="stats" aria-label="Thống kê cửa hàng"><article class="stat"><span>Món hàng trong danh mục</span><strong id="stat-products">—</strong><small id="stat-prices">Đang tải</small></article><article class="stat"><span>Đơn chờ xác nhận</span><strong id="stat-pending">—</strong><small>Cần kiểm tra tình trạng hàng</small></article><article class="stat"><span>Tổng số đơn hàng</span><strong id="stat-orders">—</strong><small>Bao gồm tất cả trạng thái</small></article><article class="stat stat-accent"><span>Giá trị đơn hoàn tất</span><strong id="stat-revenue">—</strong><small>Chưa bao gồm phí vận chuyển</small></article></div>
+      <p id="dashboard-message" class="notice" role="status" hidden></p>
+      <section class="workspace">
+        <div class="workspace-header"><div class="tabs" role="tablist" aria-label="Nội dung quản trị"><button id="tab-orders" role="tab" aria-selected="true" aria-controls="panel-orders" tabindex="0">Đơn hàng <span id="orders-count" class="count">0</span></button><button id="tab-products" role="tab" aria-selected="false" aria-controls="panel-products" tabindex="-1">Sản phẩm <span id="products-count" class="count">0</span></button></div><span id="updated-at" class="updated-at"></span></div>
+        <section id="panel-orders" role="tabpanel" aria-labelledby="tab-orders">
+          <div class="toolbar"><div class="search-field"><label class="sr-only" for="order-search">Tìm đơn theo mã, tên hoặc điện thoại</label><span aria-hidden="true">⌕</span><input id="order-search" type="search" placeholder="Mã đơn, tên hoặc số điện thoại…" autocomplete="off"></div><label class="sr-only" for="order-status-filter">Lọc trạng thái đơn hàng</label><select id="order-status-filter"><option value="">Tất cả trạng thái</option><option value="pending">Chờ xác nhận</option><option value="confirmed">Đã xác nhận</option><option value="shipping">Đang giao</option><option value="completed">Hoàn tất</option><option value="cancelled">Đã hủy</option></select></div>
+          <div class="table-scroll"><table role="table"><caption class="sr-only">Danh sách đơn hàng</caption><thead role="rowgroup"><tr role="row"><th role="columnheader">Mã đơn / ngày đặt</th><th role="columnheader">Khách hàng</th><th role="columnheader">Giá trị sản phẩm</th><th role="columnheader">Trạng thái</th><th role="columnheader"><span class="sr-only">Thao tác</span></th></tr></thead><tbody role="rowgroup" id="orders-table"></tbody></table></div><p id="orders-empty" class="empty-state" hidden>Chưa có đơn hàng nào phù hợp.</p>
+        </section>
+        <section id="panel-products" role="tabpanel" aria-labelledby="tab-products" hidden>
+          <div class="toolbar"><div class="search-field"><label class="sr-only" for="product-search">Tìm món hàng theo tên mẫu, BST, tình trạng hoặc mã món</label><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Tên mẫu, món hàng, BST hoặc mã món…" autocomplete="off"></div><label class="sr-only" for="product-stock-filter">Lọc tình trạng sản phẩm</label><select id="product-stock-filter"><option value="">Tất cả tình trạng</option><option value="available">Còn hàng</option><option value="unknown">Cần xác nhận</option><option value="sold_out">Đã bán / hết hàng</option><option value="unpriced">Chưa có giá</option></select></div>
+          <div class="table-scroll"><table role="table"><caption class="sr-only">Danh mục sản phẩm</caption><thead role="rowgroup"><tr role="row"><th role="columnheader">Mẫu / món hàng riêng</th><th role="columnheader">BST / tình trạng món</th><th role="columnheader">Đơn giá</th><th role="columnheader">Tình trạng hàng</th><th role="columnheader"><span class="sr-only">Thao tác</span></th></tr></thead><tbody role="rowgroup" id="products-table"></tbody></table></div><p id="products-empty" class="empty-state" hidden>Không tìm thấy sản phẩm phù hợp.</p>
+        </section>
+      </section>
+      <p class="data-note">Mỗi món có giá, tình trạng và ảnh/video riêng.</p>
+    </section>
+  </main>
+  <footer class="footer"><span>© Sentai Galaxy</span><span>Mỗi mô hình, một vì sao.</span></footer>
+  <dialog id="product-dialog" aria-labelledby="product-dialog-title"><div class="dialog-heading"><div><span class="eyebrow">DANH MỤC SẢN PHẨM</span><h2 id="product-dialog-title">Cập nhật món hàng</h2></div><button class="icon-button" type="button" data-close="product-dialog" aria-label="Đóng cửa sổ cập nhật sản phẩm">×</button></div><form id="product-form"><p id="product-name" class="dialog-product-name"></p><p id="product-sku" class="muted"></p><a id="product-media-link" class="button button-outline media-dialog-link" href="/admin">Quản lý ảnh &amp; video ↗</a><label for="product-unit-label">Tên lựa chọn của món</label><input id="product-unit-label" required maxlength="60" placeholder="Ví dụ: Món 01"><label for="product-collection">Bộ sưu tập / lô hàng (BST)</label><input id="product-collection" maxlength="100" placeholder="Ví dụ: BST tháng 11, lô A"><p class="field-help">Để trống để dùng dòng Sentai làm BST hiển thị.</p><label for="product-condition">Tình trạng thực tế của món</label><textarea id="product-condition" rows="3" maxlength="1000" placeholder="Độ mới, vết xước, chốt gãy, phụ kiện còn thiếu…"></textarea><details class="source-condition-note"><summary>Tình trạng ban đầu từ danh mục</summary><p id="product-source-condition"></p></details><label for="product-price">Đơn giá (VNĐ)</label><input id="product-price" name="price" type="number" inputmode="numeric" min="1" max="1000000000" step="1" placeholder="Để trống nếu chưa có giá"><p class="field-help">Để trống để hiển thị “Liên hệ báo giá” tại cửa hàng.</p><label for="product-availability">Tình trạng hàng</label><select id="product-availability" name="availability" required><option value="unknown">Cần xác nhận</option><option value="available">Còn hàng</option><option value="sold_out">Đã bán / hết hàng</option></select><p id="product-error" class="form-error" role="alert"></p><div class="dialog-actions"><button type="button" class="button button-outline" data-close="product-dialog">Hủy</button><button type="submit" class="button button-primary">Lưu thay đổi</button></div></form></dialog>
+  <dialog id="order-dialog" class="order-dialog" aria-labelledby="order-dialog-title"><div class="dialog-heading"><div><span class="eyebrow">CHI TIẾT ĐƠN HÀNG</span><h2 id="order-dialog-title">Đơn hàng</h2></div><button class="icon-button" type="button" data-close="order-dialog" aria-label="Đóng chi tiết đơn hàng">×</button></div><div id="order-detail"></div><form id="order-form"><label for="order-status">Cập nhật trạng thái</label><div class="status-form"><select id="order-status" name="status" required><option value="pending">Chờ xác nhận</option><option value="confirmed">Đã xác nhận</option><option value="shipping">Đang giao</option><option value="completed">Hoàn tất</option><option value="cancelled">Đã hủy</option></select><button type="submit" class="button button-primary">Lưu trạng thái</button></div><p id="order-error" class="form-error" role="alert"></p></form></dialog>
+</body>
+</html>

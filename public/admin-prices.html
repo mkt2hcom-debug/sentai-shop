@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Giá tham khảo hội nhóm · Sentai Galaxy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin.css">
+  <link rel="stylesheet" href="/admin-prices.css">
+  <script src="/admin-session.js" defer></script>
+  <script src="/admin-prices.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến quản lý giá tham khảo</a>
+  <header class="topbar">
+    <a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">S</span><span>SENTAI<span class="brand-small">GALAXY / GIÁ THAM KHẢO</span></span></a>
+    <div class="header-actions"><a class="text-link" href="/admin">Quản trị ↗</a><button id="logout" class="button button-outline" hidden>Đăng xuất</button></div>
+  </header>
+  <main id="main" class="prices-studio">
+    <p id="boot-status" class="boot-status" role="status">Đang mở giá tham khảo…</p>
+    <section id="load-error" class="price-card" hidden><h1>Chưa tải được dữ liệu</h1><p id="load-error-message" class="form-error" role="alert"></p><button id="retry-load" class="button button-primary">Thử lại</button></section>
+    <div id="prices-content" hidden>
+      <div class="page-heading"><div><span class="eyebrow">THEO DÕI THỊ TRƯỜNG SENTAI</span><h1>Giá từ hội nhóm<span class="red-dot">.</span></h1><p class="muted">Tìm bài theo từ khóa trong các nhóm bạn đã tham gia. Lưu giá và bài gốc để đối chiếu.</p></div><button id="refresh-prices" class="button button-outline">Làm mới ↻</button></div>
+      <p id="page-message" class="notice" role="status" hidden></p>
+      <section class="price-card connection-card" aria-labelledby="connection-title"><div><span class="eyebrow">01 / KẾT NỐI TRÊN MÁY NÀY</span><h2 id="connection-title">Phiên Facebook của bạn</h2><p class="muted">Tự đăng nhập trong cửa sổ Facebook được mở, rồi đóng cửa sổ đó trước khi tìm bài. Website không yêu cầu nhập mật khẩu Facebook.</p><p id="collector-status" class="connection-status" role="status">Đang kiểm tra bộ thu thập…</p></div><button id="facebook-login" class="button button-primary" disabled>Mở Facebook để đăng nhập ↗</button></section>
+      <div class="setup-grid">
+        <section class="price-card" aria-labelledby="groups-title"><span class="eyebrow">02 / CHỌN NGUỒN</span><h2 id="groups-title">Hội nhóm theo dõi</h2><form id="group-form"><label for="group-name">Tên nhóm dễ nhớ</label><input id="group-name" required maxlength="120" placeholder="Ví dụ: Hội sưu tầm Sentai"><label for="group-url">Link nhóm Facebook</label><input id="group-url" type="url" required maxlength="500" placeholder="https://www.facebook.com/groups/…"><button class="button button-outline" type="submit">Lưu nhóm +</button></form><p id="group-error" class="form-error" role="alert"></p><ul id="group-list" class="saved-list"></ul><p id="groups-empty" class="quiet-empty">Chưa lưu nhóm. Thêm link một nhóm bạn đã tham gia.</p></section>
+        <section class="price-card" aria-labelledby="keywords-title"><span class="eyebrow">03 / TÊN MÓN CẦN TÌM</span><h2 id="keywords-title">Từ khóa sản phẩm</h2><form id="keyword-form"><label for="keyword-product">Gắn với sản phẩm trong cửa hàng</label><select id="keyword-product"><option value="">Chưa gắn sản phẩm</option></select><label for="keyword-text">Từ khóa tìm trong bài</label><input id="keyword-text" required minlength="2" maxlength="120" placeholder="Ví dụ: DX Kiramaizin"><p class="field-help">Mỗi tên gọi khác có thể lưu thành một từ khóa riêng.</p><button class="button button-outline" type="submit">Lưu từ khóa +</button></form><p id="keyword-error" class="form-error" role="alert"></p><ul id="keyword-list" class="saved-list"></ul><p id="keywords-empty" class="quiet-empty">Chọn sản phẩm hoặc nhập tên món cần theo dõi.</p></section>
+        <section class="price-card scan-card" aria-labelledby="scan-title"><span class="eyebrow">04 / TÌM VÀ GHI LẠI</span><h2 id="scan-title">Tìm bài theo từ khóa</h2><form id="scan-form"><label for="scan-keyword">Từ khóa đã lưu</label><select id="scan-keyword" required><option value="">Chọn từ khóa</option></select><fieldset><legend>Tìm trong nhóm <span class="muted">(tối đa 3 nhóm mỗi lượt)</span></legend><div id="scan-groups" class="group-options"><p class="quiet-empty">Lưu nhóm ở bước 02 để chọn.</p></div></fieldset><label for="scan-limit">Số bài tối đa mỗi nhóm</label><select id="scan-limit"><option value="10">10 bài</option><option value="20" selected>20 bài</option><option value="50">50 bài</option></select><button id="start-scan" class="button button-primary full-width" type="submit" disabled>Tìm bài &amp; lưu giá →</button></form><p id="scan-error" class="form-error" role="alert"></p><p class="field-help">Kết quả phụ thuộc những bài Facebook trả về và quyền xem của tài khoản. Một lượt tìm có thể chỉ thu được một phần bài viết.</p></section>
+      </div>
+      <section class="price-card scans-section" aria-labelledby="scans-title"><div class="section-heading"><div><span class="eyebrow">TIẾN TRÌNH</span><h2 id="scans-title">Lượt tìm gần đây</h2></div><span id="scan-count" class="count">0</span></div><div id="scan-list"></div><p id="scans-empty" class="quiet-empty">Chưa có lượt tìm nào.</p></section>
+      <section class="references-section" aria-labelledby="references-title"><div class="section-heading"><div><span class="eyebrow">GIỮ LẠI BẰNG CHỨNG GIÁ</span><h2 id="references-title">Giá tham khảo <span id="reference-count" class="count">0</span></h2></div></div><p class="muted">Giá cần được đối chiếu với tình trạng, phụ kiện và phiên bản sản phẩm. Đánh dấu đã kiểm tra chỉ xác nhận tư liệu; giá bán trong cửa hàng vẫn do bạn cập nhật.</p><p id="references-limit" class="notice" hidden></p><div class="reference-filters"><div><label for="filter-group">Hội nhóm</label><select id="filter-group"><option value="">Tất cả nhóm</option></select></div><div><label for="filter-keyword">Từ khóa</label><select id="filter-keyword"><option value="">Tất cả từ khóa</option></select></div><div><label for="filter-review">Trạng thái kiểm tra</label><select id="filter-review"><option value="">Tất cả</option><option value="pending">Cần kiểm tra</option><option value="accepted">Đã kiểm tra</option><option value="ignored">Bỏ qua</option></select></div></div><p id="references-empty" class="empty-state">Chưa có bài được lưu. Bắt đầu một lượt tìm hoặc dán nội dung bài phía dưới.</p><div id="reference-list" class="reference-list"></div></section>
+      <details class="price-card manual-import"><summary>Lưu bài thủ công khi chưa lấy được tự động</summary><p class="muted">Mở bài trong nhóm, sao chép link và nội dung bạn xem được. Hệ thống nhận diện từ khóa, trích giá và lưu cùng các kết quả tìm kiếm.</p><form id="import-form"><div class="form-pair"><div><label for="import-group">Nhóm đã lưu</label><select id="import-group" required><option value="">Chọn nhóm</option></select></div><div><label for="import-keyword">Từ khóa đã lưu</label><select id="import-keyword" required><option value="">Chọn từ khóa</option></select></div></div><label for="import-url">Link bài viết trong nhóm</label><input id="import-url" type="url" maxlength="1000" required placeholder="https://www.facebook.com/groups/…/posts/…"><label for="import-date">Ngày đăng hiển thị trên bài <span class="muted">(không bắt buộc)</span></label><input id="import-date" maxlength="120" placeholder="Ví dụ: 4 tháng 11 lúc 09:30"><label for="import-text">Nội dung bài viết</label><textarea id="import-text" rows="6" required maxlength="12000" placeholder="Dán nguyên nội dung có tên sản phẩm và giá…"></textarea><button class="button button-outline" type="submit">Phân tích &amp; lưu bài</button><p id="import-error" class="form-error" role="alert"></p></form></details>
+    </div>
+  </main>
+  <footer class="footer"><span>© Sentai Galaxy</span><span>Giá tham khảo dành riêng cho quản trị.</span></footer>
+</body>
+</html>

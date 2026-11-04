@@ -1,0 +1,2 @@
+# Local, dedicated Facebook browser profile. Never reuses the user's main profile.
+playwright>=1.49,<2

@@ -1,0 +1,25 @@
+{
+  "name": "sentai-shop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cửa hàng Sentai từ dữ liệu và ảnh trong SEntai.xlsx, sử dụng SQLite.",
+  "engines": {
+    "node": ">=22.23.2"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --env-file-if-exists=.env --watch server.mjs",
+    "db:import": "python scripts/import_catalog.py && node --env-file-if-exists=.env scripts/sync_database.mjs",
+    "db:export": "node --env-file-if-exists=.env scripts/export_database.mjs",
+    "media:setup": "node scripts/setup_media.mjs",
+    "prices:setup": "node scripts/setup_prices.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check server.mjs && node --check lib/database.mjs && node --check lib/media.mjs && node --check lib/prices.mjs && node --check lib/price-parser.mjs && node --check public/app.js && node --check public/admin.js && node --check public/product.js && node --check public/admin-media.js && node --check public/admin-prices.js && node --check lib/analytics.mjs && node --check public/analytics.js && node --check public/admin-analytics.js && node --check lib/admin-auth.mjs && node --check scripts/reset_admin.mjs && node --check lib/security.mjs && node --check lib/data-protection.mjs && node --check lib/backup.mjs && node --check public/admin-session.js && node --check scripts/backup_database.mjs && node --check scripts/restore_backup.mjs && node --check scripts/start_codespaces.mjs",
+    "admin:reset": "node --env-file-if-exists=.env scripts/reset_admin.mjs",
+    "db:backup": "node --env-file-if-exists=.env scripts/backup_database.mjs",
+    "db:restore": "node --env-file-if-exists=.env scripts/restore_backup.mjs",
+    "security:permissions": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/protect_data.ps1",
+    "start:codespaces": "node --env-file-if-exists=.env scripts/start_codespaces.mjs"
+  }
+}

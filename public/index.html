@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0c19">
+  <meta name="description" content="Khám phá bộ sưu tập mô hình Sentai, mecha và phụ kiện. Xem hình ảnh, tình trạng từng món và đặt mua tại Sentai Shop.">
+  <title>Sentai Galaxy — Vũ trụ mô hình huyền bí</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/galaxy.css">
+  <script src="/analytics.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#catalog">Đến danh sách sản phẩm</a>
+  <div class="announcement"><span class="status-dot"></span> Bước vào vũ trụ Sentai Galaxy <span class="announcement-right">SENTAI GALAXY · COLLECTOR’S UNIVERSE</span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Sentai Shop — Trang chủ">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2 37 12v16L20 38 3 28V12L20 2Z" fill="currentColor"/><path d="m10 13 10 4 10-4-3 14-7 5-7-5-3-14Z" fill="#fff"/><path d="m11 18 8 3v5l-6-3-2-5Zm18 0-8 3v5l6-3 2-5Z" fill="currentColor"/></svg>
+      <span>SENTAI<span class="brand-shop">GALAXY<span class="brand-dot">.</span></span></span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính"><a class="active" href="#catalog">Sản phẩm</a><a href="#collections">Bộ sưu tập</a><a href="#how-to-order">Cách đặt hàng</a></nav>
+    <div class="header-actions"><button class="icon-button search-shortcut" aria-label="Tìm sản phẩm" id="focus-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><button id="open-cart" class="cart-button" aria-label="Mở giỏ hàng"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg><span class="cart-label">Giỏ hàng</span><span class="cart-count" id="cart-count">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="tiny-line"></span> VŨ TRỤ HUYỀN BÍ. HUYỀN THOẠI SENTAI.</p><h1 id="hero-title">Đánh thức<br><span>huyền thoại.</span></h1><p class="hero-description">Giữa muôn vàn vì sao, mỗi mô hình mang một câu chuyện. Khám phá thiên hà Sentai và tìm mảnh ghép tiếp theo cho bộ sưu tập của bạn.</p><a class="button primary" href="#catalog">Khám phá bộ sưu tập <span aria-hidden="true">↗</span></a><div class="hero-stats"><div><strong id="product-total">—</strong><span>mẫu sản phẩm trong bộ sưu tập</span></div><span class="stat-divider"></span><div><strong id="series-total">—</strong><span>dòng Sentai &amp; mô hình</span></div></div></div>
+      <div class="hero-art"><span class="hero-ring ring-one"></span><span class="hero-ring ring-two"></span><span class="hero-cross cross-one" aria-hidden="true">✳</span><span class="hero-cross cross-two" aria-hidden="true">+</span><div class="hero-art-label">GALAXY ARCHIVE / FEATURED MECHA</div><button class="hero-product" id="hero-product" disabled aria-label="Xem mô hình nổi bật"><div class="hero-image-wrap" id="hero-image-wrap"><div class="image-placeholder hero-placeholder"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m40 10 25 15v30L40 70 15 55V25l25-15Z"/><path d="m15 25 25 15 25-15M40 40v30M28 17l25 15"/></svg></div></div><div class="hero-product-caption"><div><span class="overline" id="hero-series">SENTAI COLLECTION</span><strong id="hero-name">Mỗi mô hình, một câu chuyện.</strong></div><span class="round-arrow" aria-hidden="true">↗</span></div></button><div class="hero-note"><span class="note-circle">✦</span><span>Một mảnh ghép.<br><b>Cả một thiên hà.</b></span></div><span class="hero-index">MYSTIC SENTAI UNIVERSE / 01</span></div>
+    </section>
+    <section class="value-strip" aria-label="Thông tin bộ sưu tập"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 4 3 3-5 5 6"/></svg><span>Ảnh và tình trạng theo từng món</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="m12 3 8 4v6c0 5-8 9-8 9s-8-4-8-9V7l8-4Z"/><path d="m8 12 3 3 5-6"/></svg><span>Xem tình trạng trước khi đặt</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 5h18v13H8l-5 3V5Z"/><path d="M7 10h10M7 14h7"/></svg><span>Xác nhận đơn trước khi giao</span></div></section>
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading"><h2 id="catalog-title">Bộ sưu tập<span class="red-dot">.</span></h2><span class="catalog-total" id="catalog-total">Đang tải…</span></div>
+      <div class="filter-bar">
+        <label class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" placeholder="Tìm mô hình, tên BST…" aria-label="Tìm sản phẩm" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+        <details class="filter-options"><summary aria-label="Mở bộ lọc và sắp xếp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h10m4 0h4M3 17h4m4 0h10"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>Lọc</span></summary><div class="filter-selects"><label><span>Trạng thái</span><select id="availability-filter"><option value="all">Tất cả trạng thái</option><option value="priced">Có giá bán</option><option value="quote">Cần báo giá</option><option value="sold_out">Đã bán</option></select></label><label><span>Sắp xếp</span><select id="sort-filter"><option value="default">Mặc định</option><option value="price-asc">Giá: Thấp đến cao</option><option value="price-desc">Giá: Cao đến thấp</option><option value="name">Tên: A → Z</option></select></label></div></details>
+      </div>
+      <div id="collections" class="collection-chips" aria-label="Lọc theo bộ sưu tập"><button class="chip selected" data-series="" aria-pressed="true">Tất cả mẫu</button></div>
+      <div id="active-filters" class="active-filters" hidden><span id="filter-description"></span><button id="clear-filters" class="text-button">Xóa bộ lọc <span aria-hidden="true">×</span></button></div>
+      <div class="product-grid" id="product-grid" aria-live="polite" aria-busy="true"><div class="loading-state"><span class="spinner"></span><p>Đang mở bộ sưu tập của bạn…</p></div></div>
+      <div class="load-more-wrap"><p id="showing-count"></p><button id="load-more" class="button outline" hidden>Xem thêm sản phẩm <span aria-hidden="true">↓</span></button></div>
+    </section>
+    <section class="collection-banner"><div><p class="eyebrow">KẾT NỐI NHỮNG VÌ SAO</p><h2>Mỗi mô hình một huyền thoại.<br>Mỗi bộ sưu tập một thiên hà.</h2><p>Từ những chiến binh quen thuộc đến mảnh ghép bạn luôn tìm kiếm —<br class="desktop-break"> viết tiếp hành trình của riêng mình trong vũ trụ Sentai.</p></div><div class="banner-emblem" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><path d="m60 7 46 27v52l-46 27-46-27V34L60 7Z" stroke="currentColor" stroke-width="1"/><path d="m60 18 36 21v42l-36 21-36-21V39l36-21Z" stroke="currentColor" stroke-width="1"/><path d="m32 42 28 10 28-10-8 38-20 13-20-13-8-38Z" fill="currentColor"/><path d="m36 55 21 8v15L42 69l-6-14Zm48 0-21 8v15 15-9 6-14Z" fill="#171b30"/></svg><span>A UNIVERSE TO COLLECT</span></div></section>
+    <section class="how-to-order" id="how-to-order" aria-labelledby="order-guide-title"><div class="order-guide-heading"><p class="eyebrow">THÊM VÀO BỘ SƯU TẬP</p><h2 id="order-guide-title">Đặt hàng thật đơn giản.</h2></div><div class="steps"><article><span class="step-number">01</span><h3>Chọn mô hình yêu thích</h3><p>Chọn đúng món hàng, xem ảnh riêng, phụ kiện và tình trạng trước khi thêm vào giỏ.</p></article><article><span class="step-number">02</span><h3>Gửi yêu cầu đặt mua</h3><p>Điền thông tin liên hệ và địa chỉ nhận hàng. Yêu cầu của bạn sẽ được lưu lại.</p></article><article><span class="step-number">03</span><h3>Chờ xác nhận từ cửa hàng</h3><p>Cửa hàng xác nhận tình trạng, phí vận chuyển và đơn hàng trước khi giao. Thanh toán khi nhận hàng.</p></article></div></section>
+  </main>
+  <footer class="site-footer"><div><a class="brand footer-brand" href="/">SENTAI<span class="brand-dot">.</span></a><p>Một vũ trụ huyền bí. Vô vàn mảnh ghép đam mê.</p><div id="shop-contact" class="shop-contact" hidden></div></div><div class="footer-links"><a href="#catalog">Bộ sưu tập</a><a href="#how-to-order">Hướng dẫn đặt hàng</a><a href="/admin">Quản trị cửa hàng ↗</a></div><div class="footer-bottom"><span>Sentai Galaxy · Dành cho người yêu mô hình</span><span>Explore. Collect. Become a legend.</span></div></footer>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="detail-title"></dialog>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript-message">Vui lòng bật JavaScript để xem sản phẩm và sử dụng giỏ hàng.</p></noscript>
+</body>
+</html>

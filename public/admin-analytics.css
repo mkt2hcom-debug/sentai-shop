@@ -1,0 +1,142 @@
+.analytics-page .topbar { height: 72px; }
+.analytics-page .topbar .button { min-height: 44px; }
+.analytics-shell { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 12px 0 28px; }
+.analytics-shell input, .analytics-shell select { min-width: 0; width: 100%; font-size: 16px; min-height: 46px; }
+.analytics-shell button, .analytics-shell summary { min-height: 44px; }
+.analytics-shell button { -webkit-tap-highlight-color: transparent; }
+.analytics-access { max-width: 640px; margin: 80px auto; padding: 28px; background: #15182c; border: 1px solid #514065; border-radius: 16px; }
+.analytics-access h1 { font-size: 30px; }
+.analytics-access p { font-size: 15px; line-height: 1.7; color: #bdb5ce; }
+.analytics-breadcrumb { display: flex; align-items: center; gap: 14px; color: #aba2c2; font-size: 12px; }
+.analytics-breadcrumb a { display: inline-flex; align-items: center; min-height: 44px; color: #c9b2f5; }
+.analytics-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 8px 0 20px; }
+.analytics-heading h1 { margin: 0 0 6px; font-size: clamp(26px, 4vw, 35px); }
+.analytics-heading p { margin: 0; color: #afa5c3; font-size: 12px; line-height: 1.6; }
+.analytics-heading > .button { flex-shrink: 0; }
+.analytics-card { padding: 20px; border: 1px solid #3b3453; border-radius: 16px; background: linear-gradient(135deg, #19172ee6, #101629f5); min-width: 0; }
+.quick-ranges { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: thin; scrollbar-color: #6b568b transparent; }
+.quick-ranges button, .chart-buckets button, .ranking-groups button { background: #14172b; border: 1px solid #443c5c; color: #c5bcd8; border-radius: 8px; font-size: 13px; padding: 10px 16px; white-space: nowrap; }
+.quick-ranges button[aria-pressed="true"], .chart-buckets button[aria-pressed="true"], .ranking-groups button[aria-pressed="true"] { color: #f1e6ff; background: #3d2a5d; border-color: #a17ce0; }
+.date-form { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 12px; align-items: end; }
+.date-form label { margin: 8px 0 7px; font-size: 12px; color: #c2b8d1; }
+.date-form .button { min-height: 46px; }
+.analytics-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 18px 0; }
+.analytics-stat { padding: 20px; border: 1px solid #4b3c65; border-radius: 14px; background: linear-gradient(125deg, #30204b, #161b35); min-width: 0; }
+.analytics-stat:nth-child(2) { background: linear-gradient(125deg, #17323c, #141d35); border-color: #315365; }
+.analytics-stat:nth-child(3) { background: linear-gradient(125deg, #27203d, #141a2e); }
+.analytics-stat span { display: block; color: #c4b8db; font-size: 13px; line-height: 1.5; }
+.analytics-stat strong { display: block; margin-top: 12px; color: #f0e5ff; font-size: clamp(24px, 4vw, 38px); line-height: 1.1; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+.analytics-stat:nth-child(2) strong { color: #b7efee; }
+.analytics-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 16px; }
+.analytics-section-heading h2 { margin: 0; font-size: 22px; letter-spacing: -.6px; }
+.chart-buckets { display: flex; gap: 6px; flex-shrink: 0; }
+.chart-buckets button { padding-inline: 14px; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: #c5bdd6; }
+.chart-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.chart-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+.legend-page { background: #ae86fb; }
+.legend-product { background: #6cd3dc; }
+.analytics-chart { margin: 12px 0 0; }
+.chart-plot { width: 100%; touch-action: pan-y; border-radius: 8px; outline-offset: 4px; }
+.chart-plot:focus-visible { outline: 3px solid #ac89e1; }
+.chart-plot svg { display: block; width: 100%; height: 240px; overflow: visible; }
+.chart-plot text { font: 11px "Segoe UI", sans-serif; fill: #ada2c2; }
+.chart-caption { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 8px; padding-top: 10px; border-top: 1px solid #38314f; }
+.chart-caption button, .direction-button { display: inline-grid; place-items: center; flex-shrink: 0; min-width: 44px; padding: 9px; border: 1px solid #534167; color: #dec7ff; background: #211c36; border-radius: 9px; font-size: 21px; }
+#chart-readout { text-align: center; font-size: 13px; line-height: 1.7; color: #b8afca; }
+#chart-readout strong { color: #f1e6ff; font-weight: 600; }
+#chart-readout span { display: inline-block; }
+.analytics-loading { margin: 12px 0; font-size: 13px; color: #c2a7f0; }
+#request-error { display: flex; gap: 12px; align-items: center; justify-content: space-between; margin: 14px 0; }
+#request-error .button { flex-shrink: 0; }
+.ranking-card { margin-top: 18px; }
+.analytics-count { font-size: 12px; color: #b7aacb; }
+.ranking-groups { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 12px; }
+.ranking-groups button { flex: 0 0 auto; }
+.ranking-tools { display: flex; align-items: end; gap: 14px; margin-bottom: 18px; }
+.ranking-search { margin: 0; flex: 1; min-width: 0; }
+.ranking-search input { padding-right: 10px; }
+.ranking-sort { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 7px; width: 250px; }
+.ranking-sort label { grid-column: 1 / -1; font-size: 12px; color: #b9accb; margin: 0; }
+.ranking-sort select { padding: 10px; }
+.ranking-table { width: 100%; table-layout: fixed; }
+.ranking-table th { font-size: 12px; letter-spacing: 0; padding: 12px; }
+.ranking-table th:first-child { width: 46%; }
+.ranking-table th:nth-child(2), .ranking-table th:nth-child(3) { width: 14%; text-align: right; }
+.ranking-table th:last-child { width: 26%; text-align: right; }
+.ranking-table td { padding: 16px 12px; font-size: 13px; }
+.ranking-table td:nth-child(2), .ranking-table td:nth-child(3), .ranking-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.ranking-table td:last-child { font-size: 12px; color: #b0a4c5; }
+.rank-name { display: flex; align-items: start; gap: 12px; min-width: 0; }
+.rank-number { flex-shrink: 0; width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; color: #d7baff; background: #352644; font-size: 12px; }
+.rank-name > div { min-width: 0; }
+.rank-name a { display: inline-block; color: #eee4fd; font-weight: 600; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.rank-name a:hover { text-decoration: underline; }
+.rank-name small { font-size: 11px; line-height: 1.6; color: #a89cbf; overflow-wrap: anywhere; }
+.rank-value { display: block; font-size: 16px; font-weight: 650; color: #e2caff; }
+.rank-mobile-label { display: none; }
+.analytics-pagination { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 18px; border-top: 1px solid #39314f; }
+.analytics-pagination span { color: #b8acc9; font-size: 12px; text-align: center; }
+.analytics-empty { text-align: center; color: #b5a9c8; font-size: 14px; line-height: 1.7; padding: 24px 12px; margin: 0; }
+.analytics-definitions { margin-top: 16px; color: #a99dbc; font-size: 12px; line-height: 1.7; }
+.analytics-definitions summary { align-content: center; cursor: pointer; color: #c9b0eb; }
+.analytics-definitions p { max-width: 760px; margin: 4px 0 10px; }
+.analytics-page button:disabled { cursor: default; opacity: .4; }
+.analytics-page .footer a { display: inline-flex; min-height: 44px; align-items: center; }
+@media (max-width: 700px) {
+  .analytics-page .topbar { height: 66px; padding-inline: 16px; }
+  .analytics-shell { width: calc(100% - 28px); padding-top: 6px; }
+  .analytics-heading { align-items: start; margin: 8px 0 16px; }
+  .analytics-heading h1 { font-size: 26px; line-height: 1.25; }
+  .analytics-heading p { font-size: 11px; }
+  .analytics-heading > .button { min-height: 44px; padding-inline: 10px; font-size: 11px; }
+  .analytics-card { padding: 14px; border-radius: 13px; }
+  .quick-ranges { gap: 6px; }
+  .quick-ranges button { flex-shrink: 0; padding-inline: 12px; font-size: 12px; }
+  .date-form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 9px; }
+  .date-form input { padding: 10px 7px; min-width: 0; }
+  .date-form .button { grid-column: 1 / -1; margin-top: 1px; }
+  .analytics-stats { gap: 8px; margin: 14px 0; }
+  .analytics-stat { padding: 14px 10px; border-radius: 11px; }
+  .analytics-stat span { font-size: 11px; min-height: 32px; }
+  .analytics-stat strong { font-size: 26px; margin-top: 8px; }
+  .analytics-section-heading { align-items: start; gap: 10px; }
+  .analytics-section-heading h2 { font-size: 19px; }
+  .chart-card .analytics-section-heading { flex-direction: column; }
+  .chart-buckets { width: 100%; }
+  .chart-buckets button { flex: 1; font-size: 13px; }
+  .chart-legend { font-size: 11px; gap: 12px; }
+  .chart-plot svg { height: 210px; }
+  #chart-readout { font-size: 11px; }
+  .chart-caption { gap: 6px; }
+  .ranking-groups { gap: 6px; }
+  .ranking-groups button { flex: 1; padding-inline: 9px; font-size: 12px; }
+  .ranking-tools { flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 14px; }
+  .ranking-sort { width: 100%; }
+  .ranking-table, .ranking-table tbody { display: block; }
+  .ranking-table thead { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); overflow: hidden; }
+  .ranking-table tbody { display: grid; gap: 10px; padding-bottom: 14px; }
+  .ranking-table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 13px; padding: 14px; border: 1px solid #38334d; border-radius: 11px; background: #15182d; }
+  .ranking-table td { display: block; padding: 0; border: 0; min-width: 0; }
+  .ranking-table td:first-child, .ranking-table td:last-child { grid-column: 1 / -1; }
+  .ranking-table td:nth-child(2), .ranking-table td:nth-child(3), .ranking-table td:last-child { text-align: left; }
+  .rank-name { gap: 9px; }
+  .rank-mobile-label { display: block; font-size: 11px; color: #b5a5c8; margin-bottom: 5px; }
+  .ranking-table td:last-child .rank-mobile-label { display: inline; margin-right: 8px; }
+  .rank-value { font-size: 20px; }
+  .analytics-pagination .button { font-size: 12px; padding: 10px 12px; }
+  .analytics-access { padding: 24px 18px; margin-top: 34px; }
+  .analytics-access h1 { font-size: 26px; }
+}
+@media (max-width: 360px) {
+  .analytics-shell { width: calc(100% - 24px); }
+  .analytics-heading { flex-wrap: wrap; gap: 8px; }
+  .analytics-heading > .button { margin-left: auto; }
+  .analytics-card { padding: 12px; }
+  .analytics-stats { gap: 6px; }
+  .analytics-stat { padding: 12px 8px; }
+  .analytics-stat strong { font-size: 23px; }
+  .date-form input { font-size: 16px; padding-inline: 3px; }
+  .chart-caption button { min-width: 44px; }
+  #request-error { flex-direction: column; align-items: start; }
+}

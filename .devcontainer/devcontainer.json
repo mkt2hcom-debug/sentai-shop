@@ -1,0 +1,14 @@
+{
+  "name": "Sentai Shop — Codespaces demo",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "node",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Sentai Shop demo",
+      "protocol": "http",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm run media:setup"
+}

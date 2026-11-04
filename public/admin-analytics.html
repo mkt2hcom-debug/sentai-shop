@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Thống kê truy cập · Sentai Galaxy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin.css">
+  <link rel="stylesheet" href="/admin-analytics.css">
+  <script src="/admin-session.js" defer></script>
+  <script src="/admin-analytics.js" defer></script>
+</head>
+<body class="analytics-page">
+  <a class="skip-link" href="#main">Đến thống kê truy cập</a>
+  <header class="topbar">
+    <a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">S</span><span>SENTAI<span class="brand-small">GALAXY / THỐNG KÊ</span></span></a>
+    <div class="header-actions"><button id="logout" class="button button-outline" hidden>Đăng xuất</button></div>
+  </header>
+  <main id="main" class="analytics-shell">
+    <p id="boot-status" class="boot-status" role="status">Đang mở thống kê…</p>
+    <section id="auth-panel" class="analytics-access" aria-labelledby="auth-title" hidden><h1 id="auth-title">Thống kê truy cập</h1><p id="auth-message">Đăng nhập để xem thống kê cửa hàng.</p><a id="login-link" class="button button-primary" href="/admin?next=%2Fadmin%2Fanalytics">Đăng nhập quản trị →</a></section>
+    <section id="boot-error" class="analytics-access" hidden><h1>Chưa mở được thống kê</h1><p id="boot-error-text" role="alert"></p><button id="retry-boot" class="button button-primary">Thử lại</button></section>
+    <div id="analytics-content" hidden>
+      <nav class="analytics-breadcrumb" aria-label="Vị trí trang"><a href="/admin">← Quản trị</a><span>Thống kê truy cập</span></nav>
+      <div class="analytics-heading"><div><h1>Thống kê truy cập</h1><p id="measurement-start">Giờ Việt Nam · UTC+7</p></div><button id="refresh-analytics" class="button button-outline" aria-label="Làm mới thống kê">Làm mới ↻</button></div>
+      <section class="analytics-card analytics-filters" aria-label="Khoảng thời gian">
+        <div class="quick-ranges" role="group" aria-label="Chọn nhanh thời gian"><button type="button" data-range="today" aria-pressed="false">Hôm nay</button><button type="button" data-range="week" aria-pressed="false">7 ngày</button><button type="button" data-range="month" aria-pressed="false">Tháng này</button><button type="button" data-range="year" aria-pressed="false">Năm nay</button></div>
+        <form id="date-form" class="date-form"><div><label for="date-from">Từ ngày</label><input id="date-from" type="date" required></div><div><label for="date-to">Đến ngày</label><input id="date-to" type="date" required></div><button type="submit" class="button button-primary">Áp dụng</button></form>
+        <p id="filter-error" class="form-error" role="alert" hidden></p>
+      </section>
+      <div id="request-error" class="notice error" role="alert" hidden><span id="request-error-text"></span><button id="retry-request" class="button button-outline">Thử lại</button></div>
+      <p id="loading-status" class="analytics-loading" role="status" hidden>Đang cập nhật…</p>
+      <div id="analytics-results" aria-busy="false" hidden>
+        <section class="analytics-stats" aria-label="Tổng quan trong khoảng đã chọn"><article class="analytics-stat"><span>Lượt xem trang</span><strong id="stat-page-views">0</strong></article><article class="analytics-stat"><span>Lượt xem sản phẩm</span><strong id="stat-product-views">0</strong></article><article class="analytics-stat"><span>Phiên truy cập</span><strong id="stat-visits">0</strong></article></section>
+        <section class="analytics-card chart-card" aria-labelledby="chart-title">
+          <div class="analytics-section-heading"><h2 id="chart-title">Lượt xem theo ngày</h2><div class="chart-buckets" role="group" aria-label="Gộp thống kê theo thời gian"><button type="button" data-bucket="day" aria-pressed="true">Ngày</button><button type="button" data-bucket="month" aria-pressed="false">Tháng</button><button type="button" data-bucket="year" aria-pressed="false">Năm</button></div></div>
+          <div class="chart-legend"><span><i class="legend-page" aria-hidden="true"></i>Tất cả trang</span><span><i class="legend-product" aria-hidden="true"></i>Trang sản phẩm</span></div>
+          <figure class="analytics-chart"><div id="chart" class="chart-plot" tabindex="0" role="img" aria-label="Biểu đồ lượt xem. Dùng phím mũi tên trái và phải để xem từng kỳ."></div><figcaption class="chart-caption"><button id="previous-period" type="button" aria-label="Kỳ trước">←</button><div id="chart-readout" aria-live="polite"></div><button id="next-period" type="button" aria-label="Kỳ tiếp theo">→</button></figcaption></figure>
+          <p id="chart-empty" class="analytics-empty" hidden>Chưa có lượt xem trong khoảng này.</p>
+        </section>
+        <section class="analytics-card ranking-card" aria-labelledby="ranking-title">
+          <div class="analytics-section-heading"><h2 id="ranking-title">Xếp hạng lượt xem</h2><span id="ranking-count" class="analytics-count"></span></div>
+          <div class="ranking-groups" role="group" aria-label="Thống kê theo đối tượng"><button type="button" data-group="pages" aria-pressed="false">Trang</button><button type="button" data-group="products" aria-pressed="true">Sản phẩm</button><button type="button" data-group="units" aria-pressed="false">Từng chiếc</button></div>
+          <div class="ranking-tools"><label class="ranking-search"><span class="sr-only">Tìm trong bảng thống kê</span><input id="ranking-search" type="search" placeholder="Tìm tên sản phẩm…" maxlength="100" autocomplete="off"></label><div class="ranking-sort"><label for="ranking-sort">Sắp xếp theo</label><select id="ranking-sort"><option value="views">Lượt xem</option><option value="visits">Phiên truy cập</option><option value="last_view">Xem gần nhất</option><option value="name">Tên</option></select><button id="sort-direction" type="button" class="direction-button" aria-label="Đang sắp xếp giảm dần. Bấm để tăng dần.">↓</button></div></div>
+          <div class="ranking-table-wrap"><table class="ranking-table" role="table"><caption class="sr-only">Xếp hạng lượt xem trong khoảng đã chọn</caption><thead role="rowgroup"><tr role="row"><th scope="col">Trang / sản phẩm</th><th scope="col">Lượt xem</th><th scope="col">Phiên</th><th scope="col">Xem gần nhất</th></tr></thead><tbody id="ranking-rows" role="rowgroup"></tbody></table></div>
+          <p id="ranking-empty" class="analytics-empty" hidden>Chưa có dữ liệu phù hợp.</p>
+          <nav id="ranking-pagination" class="analytics-pagination" aria-label="Phân trang thống kê"><button id="previous-page" class="button button-outline" type="button">← Trước</button><span id="page-count" aria-live="polite"></span><button id="next-page" class="button button-outline" type="button">Sau →</button></nav>
+        </section>
+        <details class="analytics-definitions"><summary>Cách tính lượt xem</summary><p>Mỗi lần mở trang hoặc chuyển sang một chiếc khác được tính một lượt xem. Một phiên kết thúc sau 30 phút không hoạt động; số phiên không phải số người. Bảng sản phẩm gộp các chiếc cùng mẫu.</p><p>Thống kê bắt đầu từ lúc bật tính năng, theo giờ Việt Nam. Trình duyệt chặn thống kê có thể không được ghi nhận.</p></details>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"><span>© Sentai Galaxy</span><a href="/admin">Về quản trị ↗</a></footer>
+</body>
+</html>

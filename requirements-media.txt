@@ -1,0 +1,3 @@
+# Python image decoding, EXIF orientation, WebP encoding and phone watermark.
+# FFmpeg + FFprobe are separate executables; see README media setup.
+Pillow>=10.4.0,<14

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ảnh &amp; video sản phẩm · Sentai Galaxy</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin.css">
+  <link rel="stylesheet" href="/admin-media.css">
+  <script src="/admin-session.js" defer></script>
+  <script src="/admin-media.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Đến quản lý ảnh và video</a>
+  <header class="topbar">
+    <a class="brand" href="/admin"><span class="brand-mark" aria-hidden="true">S</span><span>SENTAI<span class="brand-small">GALAXY / MEDIA STUDIO</span></span></a>
+    <div class="header-actions"><a class="text-link" href="/admin">Quản trị <span aria-hidden="true">↗</span></a><button id="logout" class="button button-outline" hidden>Đăng xuất</button></div>
+  </header>
+  <main id="main" class="media-studio">
+    <p id="boot-status" class="boot-status" role="status">Đang mở thư viện sản phẩm…</p>
+    <section id="auth-panel" class="access-panel" hidden aria-labelledby="auth-title">
+      <span class="eyebrow">DÀNH CHO CHỦ CỬA HÀNG</span><h1 id="auth-title">Quản lý ảnh &amp; video</h1><p id="auth-message">Đăng nhập quản trị để tải ảnh, video và cập nhật thư viện sản phẩm.</p><a id="login-link" class="button button-primary" href="/admin">Đăng nhập quản trị →</a>
+    </section>
+    <section id="load-error" class="access-panel" hidden aria-labelledby="error-title"><h1 id="error-title">Chưa mở được sản phẩm</h1><p id="load-error-message" role="alert"></p><button id="retry-load" class="button button-primary">Thử lại</button> <a href="/admin" class="button button-outline">Về quản trị</a></section>
+    <div id="studio-content" hidden>
+      <nav class="breadcrumb" aria-label="Vị trí trang"><a href="/admin">← Quản trị</a><span aria-hidden="true">/</span><span>Ảnh &amp; video</span></nav>
+      <div class="page-heading media-heading"><div><h1 id="product-title">Ảnh &amp; video</h1><p class="muted" id="product-meta"></p></div><a id="public-product-link" class="button button-outline" href="/">Xem sản phẩm ↗</a></div>
+      <p id="studio-message" class="notice" role="status" hidden></p>
+      <section class="studio-card unit-studio-card" aria-labelledby="unit-owner-title">
+        <div class="unit-owner-heading"><figure id="unit-cover" class="unit-cover" hidden><img id="unit-cover-image" alt=""><figcaption id="unit-cover-label"></figcaption></figure><div class="unit-owner-copy"><div class="unit-owner-title-row"><h2 id="unit-owner-title">Món đang chọn</h2><span id="unit-count" class="pill"></span></div><p id="unit-owner-summary" class="muted"></p></div></div>
+        <div class="unit-switcher"><label for="unit-select">Chọn món để quản lý</label><select id="unit-select" disabled></select></div>
+        <details class="unit-edit"><summary>Sửa tên, BST &amp; tình trạng</summary><form id="unit-form"><div class="unit-form-pair"><div><label for="unit-label">Tên món</label><input id="unit-label" required maxlength="60" placeholder="Món 01"></div><div><label for="unit-collection">Bộ sưu tập / lô hàng</label><input id="unit-collection" maxlength="100" placeholder="BST tháng 11, lô A…"></div></div><label for="unit-condition">Tình trạng thực tế</label><textarea id="unit-condition" rows="3" maxlength="1000" placeholder="Độ mới, vết xước, phụ kiện…"></textarea><p id="unit-source-condition" class="field-help"></p><div class="unit-form-actions"><button type="submit" class="button button-primary">Lưu thay đổi</button><button id="unit-reset-condition" type="button" class="button button-outline">Dùng tình trạng gốc</button></div><p id="unit-form-error" class="form-error" role="alert"></p></form></details>
+      </section>
+      <div class="upload-layout">
+        <section class="studio-card upload-card" aria-labelledby="upload-title">
+          <div class="card-heading"><h2 id="upload-title">Thêm ảnh &amp; video</h2><span class="corner-star" aria-hidden="true">✦</span></div>
+          <p id="upload-destination" class="upload-destination" role="status"></p>
+          <div id="dropzone" class="dropzone"><span class="upload-symbol" aria-hidden="true">↑</span><button id="choose-files" type="button" class="button button-primary" disabled>Chọn ảnh / video</button><span class="drop-hint">hoặc kéo file vào đây</span><input id="media-files" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.mp4,.mov,.webm,image/jpeg,image/png,image/webp,video/mp4,video/quicktime,video/webm" hidden></div>
+          <details class="upload-options"><summary><span>Tùy chọn</span><span class="watermark-chip">Đóng dấu <strong id="watermark-phone">…</strong></span></summary><div class="upload-options-body"><label for="quality">Chất lượng</label><select id="quality" disabled><option value="high">Giữ nét · tối ưu dung lượng</option><option value="original">Giữ độ phân giải gốc</option></select><p id="quality-help" class="field-help">Ảnh tối đa 2560 px, video tối đa 1920 px theo cạnh dài. Giữ tỷ lệ và không phóng lớn ảnh/video nhỏ.</p><p id="upload-limits" class="field-help">Ảnh JPG, PNG, WebP · Video MP4, MOV, WebM</p><p class="field-help">Tự chèn số điện thoại vào ảnh/video. Bản gốc được lưu riêng.</p></div></details>
+          <p id="processor-note" class="notice" hidden></p>
+          <div id="upload-queue-wrap" class="upload-queue-wrap" hidden><h3>File đang tải</h3><div id="upload-queue" aria-live="polite"></div></div>
+        </section>
+      </div>
+      <section id="processing-section" class="studio-card processing-card" hidden aria-labelledby="processing-title"><div class="section-title"><h2 id="processing-title">Đang xử lý</h2><span id="processing-count" class="pill"></span></div><div id="processing-list" aria-live="polite"></div></section>
+      <section class="media-library" aria-labelledby="library-title"><div class="section-title"><div><h2 id="library-title">Thư viện <span id="media-count" class="pill">0</span></h2><p id="library-owner" class="field-help"></p></div><button id="refresh-media" class="button button-outline" aria-label="Làm mới thư viện">Làm mới ↻</button></div><p id="media-empty" class="empty-library">Chưa có ảnh/video của món này.</p><div id="media-grid" class="media-grid"></div></section>
+      <section id="source-section" class="source-section" hidden aria-labelledby="source-title"><div class="section-title"><h2 id="source-title">Ảnh tham khảo</h2><span class="pill">Từ danh mục</span></div><div id="source-grid" class="source-grid"></div></section>
+    </div>
+  </main>
+  <footer class="footer"><span>© Sentai Galaxy</span><span>Mỗi góc nhìn, một câu chuyện.</span></footer>
+  <dialog id="preview-dialog" class="media-preview-dialog" aria-labelledby="preview-title"><div class="dialog-heading"><h2 id="preview-title">Xem media</h2><button id="close-preview" class="icon-button" aria-label="Đóng ảnh hoặc video">×</button></div><div id="preview-content"></div></dialog>
+</body>
+</html>
