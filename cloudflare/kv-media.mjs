@@ -207,7 +207,12 @@ async function serve(request,env,id,name){
     async pull(controller){try{while(index<streams.length&&!cancelled){const item=streams[index];if(!reader){reader=item.stream.getReader();seen=0;}
       const{value,done}=await reader.read();if(done){reader.releaseLock();reader=null;if(seen!==item.part.size)throw new Error('Media part incomplete');index++;continue;}
       const before=seen;seen+=value.byteLength;if(seen>item.part.size)throw new Error('Media part size mismatch');
-      const from=Math.max(item.from-before,0),to=Math.min(item.to-before,value.byteLength);if(to>from){controller.enqueue(value.subarray(from,to));return;}}
+      const from=Math.max(item.from-before,0),to=Math.min(item.to-before,value.byteLength);
+      if(to>from){const selectedBytes=value.subarray(from,to);
+        // A tiny Range request should not drain the unused remainder of a 5 MiB
+        // chunk through JavaScript. Upload integrity was verified before storage.
+        if(seen>=item.to){const active=reader;reader=null;index++;await active.cancel();active.releaseLock();}
+        if(!cancelled)controller.enqueue(selectedBytes);return;}}
       if(!cancelled)controller.close();}catch(error){controller.error(error);await cancel();}},cancel});
   return new Response(body,{status:range?206:200,headers});
 }
