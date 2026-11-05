@@ -10,7 +10,7 @@ const formatDate = (value) => {
 const normalize = (value) => String(value ?? '').toLocaleLowerCase('vi').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
 const statuses = { pending: 'Chờ xác nhận', confirmed: 'Đã xác nhận', shipping: 'Đang giao', completed: 'Hoàn tất', cancelled: 'Đã hủy' };
 const availabilities = { unknown: 'Cần xác nhận', available: 'Còn hàng', sold_out: 'Đã bán / hết hàng' };
-const state = { products: [], orders: [], productId: null, orderId: null, enabled: true, setupAllowed: false, activeTab: 'orders', generation: 0 };
+const state = { products: [], orders: [], productId: null, orderId: null, enabled: true, setupAllowed: false, activeTab: 'orders', generation: 0, authMode: '', session: null };
 let authBusy = false;
 let recoveryRequested = false;
 let recoveryToken = '';
@@ -91,6 +91,7 @@ function showLogin(enabled) {
   $('#login-error').textContent = recoveryRequested && !recoveryToken ? 'Liên kết khôi phục không hợp lệ. Tạo liên kết mới theo hướng dẫn bên dưới.' : '';
   if (recoveryRequested && !recoveryToken) $('#forgot-password').open = true;
   clearAuthPasswords();
+  if (state.authMode === 'passkey') window.SentaiPasskey?.renderLogin(state.session);
 }
 
 function showDashboard() {
@@ -99,6 +100,7 @@ function showDashboard() {
   $('#dashboard').hidden = false;
   $('#logout').hidden = false;
   clearAuthPasswords();
+  if (state.authMode === 'passkey') window.SentaiPasskey?.renderDashboard(state.session);
 }
 
 function message(text, kind = '') {
@@ -422,7 +424,10 @@ $('#order-form').addEventListener('submit', async (event) => {
 
 async function boot() {
   try {
+    await window.SentaiPasskey?.ready;
     const session = await api('/api/admin/session');
+    state.authMode = session.auth_mode || '';
+    state.session = session;
     state.enabled = Boolean(session.enabled);
     state.setupAllowed = Boolean(session.setup_allowed);
     if (recoveryRequested) { showLogin(state.enabled); return; }

@@ -17,3 +17,9 @@ data/secrets/
 backups/
 *.key
 /SEntai.xlsx
+.wrangler/
+.dev.vars
+.dev.vars.*
+dist/
+wrangler.local.jsonc
+cloudflare/*.private.json

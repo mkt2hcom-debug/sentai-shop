@@ -1,5 +1,9 @@
 # Sentai Shop
 
+Cửa hàng Cloudflare: **https://sentai-shop.mkt2h-sentai.workers.dev**. Mở `START-CLOUDFLARE-ADMIN.cmd` trên máy quản lý để đăng nhập lần đầu và thêm passkey. Hướng dẫn chuyển dữ liệu, cập nhật và media: [Cloudflare](cloudflare/README.md).
+
+[Chạy và chuyển dữ liệu lên Cloudflare Workers/D1](cloudflare/README.md) · [Chuẩn bị ảnh/video trên máy để tải lên Cloudflare](cloudflare/MEDIA.md)
+
 Web bán mô hình Sentai sử dụng dữ liệu và ảnh có sẵn trong `SEntai.xlsx`. Giao diện tiếng Việt phong cách galaxy huyền bí, hỗ trợ điện thoại, máy chủ Node.js và cơ sở dữ liệu **SQLite SQL lưu trên ổ đĩa**. Không cần cài thêm thư viện npm hay máy chủ MySQL.
 
 ## Chạy trên máy

@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sentai-shop",
+  "main": "cloudflare/worker.mjs",
+  "compatibility_date": "2026-11-05",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "dist/cloudflare-assets",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/products/*", "/admin", "/admin/*", "/media/*"],
+    "html_handling": "none",
+    "not_found_handling": "none"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "sentai-shop",
+    "database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "cloudflare/migrations"
+  }],
+  "vars": {"SHOP_PHONE": "0326931693"},
+  "kv_namespaces": [{"binding": "MEDIA_KV", "id": "00000000000000000000000000000000"}],
+  "triggers": {"crons": ["17 * * * *"]},
+  "observability": {"enabled": false}
+}
